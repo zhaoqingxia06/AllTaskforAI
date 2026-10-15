@@ -46,6 +46,9 @@ def normalize(entry, source, ids):
     status = entry.get('status', 'unknown')
     if status not in STATUS:
         raise ValueError(f'未知执行状态：{status}')
+    for key in ('scheduled', 'archived'):
+        if key in entry and type(entry[key]) is not bool:
+            raise ValueError(f'{key}必须是JSON布尔值')
     created = date(entry['created_at'])
     updated = date(entry.get('updated_at', created))
     messages, mids = [], set()
@@ -55,6 +58,8 @@ def normalize(entry, source, ids):
             raise ValueError(f'消息ID冲突：{tid} / {mid}')
         mids.add(mid)
         text = safe_text(m['text'])
+        if not text.strip():
+            raise ValueError('消息正文不能为空')
         when = date(m.get('time', created))
         attachments = m.get('attachments', [])
         repeat = m.get('repeat', 1)

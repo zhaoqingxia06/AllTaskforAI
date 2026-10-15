@@ -64,7 +64,7 @@ def render(tasks, coverage, previous, curation):
     removed = old_tasks.keys() - {t['id'] for t in tasks}
     changed = [t['id'] for t in tasks if t['id'] in old_tasks and t != old_tasks[t['id']]]
     delta = {k: stats[k] - previous.get('stats', {}).get(k, 0) for k in stats}
-    comparison = (f'较上次：任务 {delta["tasks"]:+d}，子任务 {delta["children"]:+d}' if previous else '首次建立新版统计基线')
+    comparison = (f'较上次：任务 {delta["tasks"]:+d}，子任务 {delta["children"]:+d}' if previous else '随仓库更新自动发布')
     data = dict(schema_version=1, generated_at=now, source='跨平台任务档案', timezone='Asia/Shanghai',
         stats=stats, tasks=tasks, comparison=dict(has_previous=bool(previous), delta=delta,
         new_tasks=sorted(new_ids), changed_tasks=changed, removed_tasks=sorted(removed)))
