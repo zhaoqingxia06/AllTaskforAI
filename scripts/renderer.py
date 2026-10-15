@@ -44,7 +44,10 @@ def render(tasks, coverage, previous, curation):
             rows = []
             for t in entries:
                 cls, status_label = STATUS.get(t['status'], STATUS['unknown'])
-                marks = ('<span class="badge scheduled">定时</span>' if t['scheduled'] else '') + ('<span class="badge">已归档</span>' if t['archived'] else '')
+                src = t.get('source', 'codex')
+                src_label = {'codex': 'Codex', 'zcode': 'ZCode'}.get(src, src[:1].upper() + src[1:])
+                marks = f'<span class="badge src {esc(src)}">{src_label}</span>'
+                marks += ('<span class="badge scheduled">定时</span>' if t['scheduled'] else '') + ('<span class="badge">已归档</span>' if t['archived'] else '')
                 marks += f'<span class="dot {cls}" role="img" aria-label="会话{status_label}" title="会话执行状态：{status_label}"></span>'
                 marks += f'<span class="sub-count" title="{t["children"]} 条子任务">{t["children"]}</span><span class="chevron" aria-hidden="true">⌄</span>'
                 body = ''.join(message_button(t, m, i) for i, m in enumerate(t['messages']))
