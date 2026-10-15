@@ -2,7 +2,7 @@
 
 把本仓库链接交给其他平台，并把下面这段话作为任务：
 
-> 读取此仓库的 AGENTS.md 和 CONTRIBUTING.md。把我在当前平台发布的真实任务及后续消息写入 data/contributions/ 下属于本平台的 JSON 文件，保留其他平台已有数据。运行 python3 scripts/build.py 验证，它会合并所有平台并更新根目录 index.html；把平台数据与生成的 index.html 一起推送 main（有写权限）或提交 Pull Request。合并后工作流再次核对并重建同一个档案文件，不部署网站。不得用单个平台HTML覆盖统一入口。
+> 读取此仓库的 AGENTS.md 和 CONTRIBUTING.md。把我在当前平台发布的真实任务及后续消息写入 data/contributions/ 下属于本平台的 JSON 文件，保留其他平台已有数据。运行 python3 scripts/build.py 验证，它会合并所有平台并更新根目录 index.html；把平台数据与生成的 index.html 一起推送 main（有写权限）或提交 Pull Request。合并后工作流再次核对并重建同一个档案文件，托管由已有工作流处理，本步骤不更改托管配置。不得用单个平台HTML覆盖统一入口。
 
 ## 文件格式
 

@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | 本机 Codex | `data/codex.json` | 每日北京时间 12:00，由本机已有自动化刷新并推送 |
 | zcode 等其他平台 | `data/contributions/*.json` | 平台推送更新，或 PR 合并后 |
-| 统一档案 | 根目录 `index.html` | 任意平台数据更新后由 Actions 自动合并重建，无网站部署 |
+| 统一档案 | 根目录 `index.html` | 任意平台数据更新后由 Actions 自动合并重建，统一维护已有页面 |
 
 本机同步仅写 Codex 数据，不覆盖其他平台文件。设备离线时不产生新的 Codex 快照；GitHub档案文件保留现有内容。
 
