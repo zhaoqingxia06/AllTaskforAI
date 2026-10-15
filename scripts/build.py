@@ -2,6 +2,7 @@
 """Validate source snapshots and build the public, standalone task archive."""
 from __future__ import annotations
 import hashlib
+import collections
 import json
 from pathlib import Path
 import re
@@ -102,13 +103,43 @@ def collect():
     return tasks, coverage, codex
 
 
+def page_data(page):
+    match = re.search(r'<script id="archive-data" type="application/json">(.*?)</script>', page, re.S)
+    if not match:
+        raise ValueError('正式HTML缺少内嵌档案数据')
+    return json.loads(match[1])
+
+
+def content_key(page):
+    data = page_data(page)
+    data.pop('generated_at', None)
+    data.pop('comparison', None)
+    page = re.sub(r'(<script id="archive-data" type="application/json">).*?(</script>)',
+                  lambda m: m[1] + json.dumps(data, ensure_ascii=False, sort_keys=True) + m[2], page, flags=re.S)
+    page = re.sub(r'(<div class="edition">最近整理<time>)[^<]*(</time>)', r'\1CHECK_TIME\2', page, count=1)
+    return re.sub(r'(<div class="comparison">)[^<]*(<br>)', r'\1RUN_DELTA\2', page, count=1)
+
+
 def main():
     tasks, coverage, codex = collect()
-    previous = {}
+    entry = ROOT / 'index.html'
+    previous_page = entry.read_text() if entry.exists() else None
+    previous = page_data(previous_page) if previous_page else {}
+    current_ids = {t['id'] for t in tasks}
+    if {t['id'] for t in previous.get('tasks', [])} - current_ids:
+        raise ValueError('合并任务减少，保留旧入口；先核实来源文件是否缺失')
     public, data = render(tasks, coverage, previous, read(ROOT / 'data/curation.json'))
     if public.count('class="task" data-id=') != len(tasks):
         raise ValueError('任务行数不匹配')
-    data['source_updated_at'] = codex['generated_at']
+    # One canonical entry, shared by every source and the local copy. Keep the
+    # previous bytes when only check time / comparison text changed.
+    if previous_page and content_key(public) == content_key(previous_page):
+        public, data = previous_page, previous
+    else:
+        temporary = entry.with_suffix('.html.tmp')
+        temporary.write_text(public)
+        temporary.replace(entry)
+    data['source_updated_at'] = max((t['updated_at'] for t in tasks), default=codex['generated_at'])
     dist = ROOT / 'dist'
     dist.mkdir(exist_ok=True)
     (dist / 'index.html').write_text(public)
@@ -117,7 +148,9 @@ def main():
     digest = hashlib.sha256(json.dumps(tasks, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     feed = dict(schema_version=1, generated_at=data['generated_at'], source_updated_at=codex['generated_at'],
                 tasks=data['stats']['tasks'], children=data['stats']['children'], messages=data['stats']['messages'],
-                sources=sorted(set(t['source'] for t in tasks)), content_sha256=digest, data_url='./tasks.json')
+                sources=sorted(set(t['source'] for t in tasks)),
+                source_counts=dict(collections.Counter(t['source'] for t in tasks)),
+                content_sha256=digest, data_url='./tasks.json')
     (dist / 'feed.json').write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps(feed, ensure_ascii=False))
 

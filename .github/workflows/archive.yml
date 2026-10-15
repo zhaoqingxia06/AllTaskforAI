@@ -1,0 +1,36 @@
+name: Rebuild unified task archive
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - 'web/**'
+      - '.github/workflows/archive.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: unified-task-archive
+  cancel-in-progress: false
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Validate multi-platform behavior
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Rebuild the single entry from all platform files
+        run: python3 scripts/build.py
+      - name: Commit the entry only if content changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Rebuild unified task archive'
+            git push origin HEAD:main
+          fi

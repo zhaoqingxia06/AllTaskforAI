@@ -18,19 +18,20 @@
 <body>
 <a class="skip" href="#archive-panel">跳到任务列表</a>
 <div class="page">
-<header class="masthead"><div><h1>任务档案</h1><p class="stats"><span class="range">{{START}} — {{END}}</span><span class="sep range-sep">·</span><span><strong>{{TASKS}}</strong> 个任务</span><span class="sep">·</span><span><strong>{{CHILDREN}}</strong> 条子任务</span>{{SOURCES}}</p></div><div class="edition">最近整理<time>{{UPDATED}}</time><span class="edition-note">仓库更新后自动发布</span></div></header>
+<header class="masthead"><div><h1>任务档案</h1><p class="stats"><span class="range">{{START}} — {{END}}</span><span class="sep range-sep">·</span><span><strong>{{TASKS}}</strong> 个任务</span><span class="sep">·</span><span><strong>{{CHILDREN}}</strong> 条子任务</span>{{SOURCES}}</p></div><div class="edition">最近整理<time>{{UPDATED}}</time><span class="edition-note">所有平台统一汇总</span></div></header>
 <nav class="tabbar" role="tablist" aria-label="按分类浏览">{{TABS}}</nav>
 <div class="toolbar"><label class="search"><svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.4"/></svg><input id="search" type="search" placeholder="搜索任务与原文" aria-label="搜索任务与原文" autocomplete="off"></label><div class="legend" aria-label="会话执行状态"><span><i class="dot done" aria-hidden="true"></i>完成</span><span><i class="dot error" aria-hidden="true"></i>出错</span><span><i class="dot running" aria-hidden="true"></i>进行中</span><span class="unknown-label"><i class="dot" aria-hidden="true"></i>中断 / 待核实</span></div></div>
 <main id="archive-panel" role="tabpanel" aria-labelledby="tab-all" tabindex="0">{{SECTIONS}}</main>
 <div class="empty" id="empty" hidden><strong>没有匹配的任务</strong>试试其他关键词或分类。</div>
 <p id="result-status" class="footnote" aria-live="polite" style="font-size:11px;color:var(--muted)">显示 {{TASKS}} 个任务</p>
-<footer><div><p>跨平台任务档案 · 第一条消息为任务，其余消息为子任务。</p><p>状态表示最近一次用户回合的执行结果；需求是否验收，以实际成果为准。</p><details><summary>整理口径与覆盖范围</summary><div class="footnote">当前 Codex 数据来自本机可读取会话（含归档），未接入 ChatGPT 网页历史。已排除 {{EXCLUDED}} 个内部、自动化运行或空会话，过滤 {{SYSTEM}} 条系统输入，合并 {{DUPLICATES}} 条连续重复消息。{{METADATA}} 个任务只有索引、没有可读原文，已单独注明。{{PENDING}} 个任务待继续归类。来自其他平台的任务由各平台写入仓库，统一呈现。定时与产品归组独立；分类由 AI 整理。已识别的凭据隐藏。每次仓库更新会触发部署；Codex 数据计划每日北京时间12:00从本机同步，需要设备在线且应用运行。</div></details></div><div class="comparison">{{COMPARISON}}<br><a href="./tasks.json" download>下载任务数据</a> · <a href="./feed.json">更新信息</a></div></footer>
+<footer><div><p>跨平台任务档案 · 第一条消息为任务，其余消息为子任务。</p><p>状态表示最近一次用户回合的执行结果；需求是否验收，以实际成果为准。</p><details><summary>整理口径与覆盖范围</summary><div class="footnote">当前 Codex 数据来自本机可读取会话（含归档），未接入 ChatGPT 网页历史。已排除 {{EXCLUDED}} 个内部、自动化运行或空会话，过滤 {{SYSTEM}} 条系统输入，合并 {{DUPLICATES}} 条连续重复消息。{{METADATA}} 个任务只有索引、没有可读原文，已单独注明。{{PENDING}} 个任务待继续归类。来自其他平台的任务由各平台写入仓库，统一呈现。定时与产品归组独立；分类由 AI 整理。已识别的凭据隐藏。每次平台数据推送后统一重建同一档案文件；本地文件在同步后更新，已打开的页面需重新载入；Codex 数据计划每日北京时间12:00从本机同步，需要设备在线且应用运行。</div></details></div><div class="comparison">{{COMPARISON}}<br><a id="download-data" download="tasks.json">下载全部任务数据</a></div></footer>
 </div>
 <dialog id="reader" aria-labelledby="reader-title"><div class="dialog-head"><h2 id="reader-title">任务原文</h2><button id="close-reader" aria-label="关闭全文">×</button></div><div class="dialog-content"><time id="reader-time"></time><pre id="fulltext"></pre></div></dialog>
 <script id="archive-data" type="application/json">{{DATA}}</script>
 <script>
 (()=>{'use strict';
 const data=JSON.parse(document.getElementById('archive-data').textContent);
+const download=document.getElementById("download-data");download.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:"application/json"}));
 const byId=new Map(data.tasks.map(t=>[t.id,t]));
 const tabs=[...document.querySelectorAll('[role="tab"]')];
 const panel=document.getElementById('archive-panel');

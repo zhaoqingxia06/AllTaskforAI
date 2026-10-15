@@ -2,7 +2,7 @@
 
 把本仓库链接交给其他平台，并把下面这段话作为任务：
 
-> 读取此仓库的 AGENTS.md 和 CONTRIBUTING.md。把我在当前平台发布的真实任务及后续消息写入 data/contributions/ 下属于本平台的 JSON 文件，保留其他平台已有数据。运行 python3 scripts/build.py 验证，通过后推送 main（有写权限）或提交 Pull Request。PR 合并后自动更新同一个 GitHub Pages 网站。
+> 读取此仓库的 AGENTS.md 和 CONTRIBUTING.md。把我在当前平台发布的真实任务及后续消息写入 data/contributions/ 下属于本平台的 JSON 文件，保留其他平台已有数据。运行 python3 scripts/build.py 验证，它会合并所有平台并更新根目录 index.html；把平台数据与生成的 index.html 一起推送 main（有写权限）或提交 Pull Request。合并后工作流再次核对并重建同一个档案文件，不部署网站。不得用单个平台HTML覆盖统一入口。
 
 ## 文件格式
 
@@ -45,4 +45,4 @@
 
 ## 数据接口
 
-部署网址下的 `tasks.json` 是合并后的完整数据；`feed.json` 含更新时间、统计数和内容摘要，便于平台判断是否变化。
+固定入口：[index.html](https://github.com/zhaoqingxia06/AllTaskforAI/blob/main/index.html)。它内嵌所有平台数据，可独立打开并下载全部任务 JSON。构建的 dist/tasks.json 和 dist/feed.json 可供本地工具核对数量与内容摘要。

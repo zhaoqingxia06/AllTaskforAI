@@ -9,6 +9,6 @@ This is the public task archive. Preserve every existing task and original user 
 - The first message is the task itself; later messages are sub-tasks. Preserve non-consecutive repeats.
 - Categories: 做产品 / 查询知识 / 生活攻略 / 工具配置 / 账号与支持 / 记录整理 / 定时自动化.
 - Use the task's product/topic as `group`; scheduled is an independent boolean.
-- Validate with `python3 scripts/build.py` before pushing or opening a PR. CI validates PRs and deploys main.
-- Do not edit generated `dist/` files. Do not add credentials, authentication exports, or local databases.
+- Run `python3 scripts/build.py` before pushing or opening a PR. It merges ALL platforms into the single generated root `index.html`. Include that file when committing. The archive workflow rebuilds this same file after source changes; no website deployment is configured. Never replace it with a platform-only page.
+- Do not manually edit generated `index.html` or `dist/` files. Do not add credentials, authentication exports, or local databases.
 - Never overwrite another platform's contribution file or rewrite repository history.
