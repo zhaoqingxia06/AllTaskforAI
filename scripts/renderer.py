@@ -68,6 +68,11 @@ def render(tasks, coverage, previous, curation):
     changed = [t['id'] for t in tasks if t['id'] in old_tasks and t != old_tasks[t['id']]]
     delta = {k: stats[k] - previous.get('stats', {}).get(k, 0) for k in stats}
     comparison = (f'较上次：任务 {delta["tasks"]:+d}，子任务 {delta["children"]:+d}' if previous else '随仓库更新自动发布')
+    src_counts = collections.Counter(t['source'] for t in tasks)
+    src_labels = {'codex': 'Codex', 'zcode': 'ZCode'}
+    sources_line = '<span class="sep range-sep">·</span>'.join(
+        f'<span>{src_labels.get(src, src)} <strong>{n}</strong></span>'
+        for src, n in sorted(src_counts.items()))
     data = dict(schema_version=1, generated_at=now, source='跨平台任务档案', timezone='Asia/Shanghai',
         stats=stats, tasks=tasks, comparison=dict(has_previous=bool(previous), delta=delta,
         new_tasks=sorted(new_ids), changed_tasks=changed, removed_tasks=sorted(removed)))
@@ -76,7 +81,7 @@ def render(tasks, coverage, previous, curation):
     values = {'TABS': tab, 'SECTIONS': ''.join(sections), 'DATA': inline,
         'START': date_start.replace('-', '.'), 'END': date_end.replace('-', '.'),
         'TASKS': str(stats['tasks']), 'CHILDREN': str(stats['children']),
-        'UPDATED': now[:16].replace('T', ' '), 'COMPARISON': comparison,
+        'UPDATED': now[:16].replace('T', ' '), 'COMPARISON': comparison, 'SOURCES': sources_line,
         'EXCLUDED': str(len(coverage['excluded'])), 'SYSTEM': str(coverage['system_messages']),
         'DUPLICATES': str(coverage['consecutive_duplicates']),
         'PENDING': str(coverage['classification_pending']),

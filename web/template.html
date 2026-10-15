@@ -18,7 +18,7 @@
 <body>
 <a class="skip" href="#archive-panel">跳到任务列表</a>
 <div class="page">
-<header class="masthead"><div><h1>任务档案</h1><p class="stats"><span class="range">{{START}} — {{END}}</span><span class="sep range-sep">·</span><span><strong>{{TASKS}}</strong> 个任务</span><span class="sep">·</span><span><strong>{{CHILDREN}}</strong> 条子任务</span></p></div><div class="edition">最近整理<time>{{UPDATED}}</time><span class="edition-note">仓库更新后自动发布</span></div></header>
+<header class="masthead"><div><h1>任务档案</h1><p class="stats"><span class="range">{{START}} — {{END}}</span><span class="sep range-sep">·</span><span><strong>{{TASKS}}</strong> 个任务</span><span class="sep">·</span><span><strong>{{CHILDREN}}</strong> 条子任务</span>{{SOURCES}}</p></div><div class="edition">最近整理<time>{{UPDATED}}</time><span class="edition-note">仓库更新后自动发布</span></div></header>
 <nav class="tabbar" role="tablist" aria-label="按分类浏览">{{TABS}}</nav>
 <div class="toolbar"><label class="search"><svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.4"/></svg><input id="search" type="search" placeholder="搜索任务与原文" aria-label="搜索任务与原文" autocomplete="off"></label><div class="legend" aria-label="会话执行状态"><span><i class="dot done" aria-hidden="true"></i>完成</span><span><i class="dot error" aria-hidden="true"></i>出错</span><span><i class="dot running" aria-hidden="true"></i>进行中</span><span class="unknown-label"><i class="dot" aria-hidden="true"></i>中断 / 待核实</span></div></div>
 <main id="archive-panel" role="tabpanel" aria-labelledby="tab-all" tabindex="0">{{SECTIONS}}</main>
