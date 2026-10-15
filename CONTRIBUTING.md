@@ -1,0 +1,48 @@
+# 让其他 Agent 更新这个网站
+
+把本仓库链接交给其他平台，并把下面这段话作为任务：
+
+> 读取此仓库的 AGENTS.md 和 CONTRIBUTING.md。把我在当前平台发布的真实任务及后续消息写入 data/contributions/ 下属于本平台的 JSON 文件，保留其他平台已有数据。运行 python3 scripts/build.py 验证，通过后推送 main（有写权限）或提交 Pull Request。PR 合并后自动更新同一个 GitHub Pages 网站。
+
+## 文件格式
+
+例如 `data/contributions/zcode.json`：
+
+```json
+{
+  "schema_version": 1,
+  "source": "zcode",
+  "tasks": [
+    {
+      "id": "replace-with-real-stable-task-id",
+      "category": "做产品",
+      "group": "实际产品名",
+      "created_at": "2026-10-16T12:00:00+08:00",
+      "updated_at": "2026-10-16T13:00:00+08:00",
+      "status": "completed",
+      "scheduled": false,
+      "archived": false,
+      "messages": [
+        {"id": "m1", "time": "2026-10-16T12:00:00+08:00", "text": "用户的第一条原始需求"},
+        {"id": "m2", "time": "2026-10-16T13:00:00+08:00", "text": "用户后续真实发送的补充"}
+      ]
+    }
+  ]
+}
+```
+
+以上仅为格式示例，不要把示例任务提交到正式数据。
+
+- `source` 使用稳定的小写英文标识；`codex` 已保留给本机同步。可使用 `zcode`、`chatgpt` 等。
+- 同一平台的任务 `id` 必须唯一且稳定。构建时自动加平台前缀，避免与其他平台冲突。
+- 时间须为带时区的 ISO 8601。标题由第一条消息生成；没有原文的任务允许 `messages: []` 并提供 `title`，页面会注明缺原文。
+- 状态允许 `completed`、`failed`、`inProgress`、`interrupted`、`unknown`。它表示执行状态，不表示用户验收。
+- 已有任务追加消息时，更新原记录及 `updated_at`，不要创建第二份任务。
+- 不同平台可使用不同文件；同一任务不能在两个文件中重复。
+- 需要组描述时，修改 `data/curation.json` 的 `groups` 映射。
+
+公开读取不需要登录。写入需要平台支持 GitHub 写权限，或通过 PR 提交并合并；只提供一个网址，不会自动授权平台读取聊天历史或写仓库。
+
+## 数据接口
+
+部署网址下的 `tasks.json` 是合并后的完整数据；`feed.json` 含更新时间、统计数和内容摘要，便于平台判断是否变化。
