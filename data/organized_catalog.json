@@ -353,6 +353,46 @@
       "category_id": "research",
       "description": "了解餐饮品牌的走红过程、门店与产品定位。",
       "aliases": []
+    },
+    {
+      "id": "p-sign-translator-v2",
+      "name": "手语翻译官",
+      "category_id": "product",
+      "description": "vivo 面向听障用户的手语翻译 App，覆盖手语识别、翻译、合成与 AI 手语陪练；本机产出 V2 软件开发计划书、需求整理与陪练技术方案。",
+      "aliases": [
+        "手语翻译官V2",
+        "Sign Translator"
+      ]
+    },
+    {
+      "id": "p-ai-pm-learning",
+      "name": "AI 产品认知学习",
+      "category_id": "career",
+      "description": "为转型 AI 产品经理而学习编码 Agent 构建原理、大模型能力边界与面试表达。",
+      "aliases": [
+        "AI 知识学习"
+      ]
+    },
+    {
+      "id": "p-obsidian-calendar",
+      "name": "Obsidian 日历日记集成",
+      "category_id": "records",
+      "description": "在 Obsidian 中打通日历与日记索引：点击日期创建或跳转当天日记，并展示待完成待办。",
+      "aliases": []
+    },
+    {
+      "id": "p-pc-cleanup",
+      "name": "电脑整理与清理",
+      "category_id": "tools",
+      "description": "分析磁盘占用、清理缓存与重复文件、重排 D 盘目录并卸载闲置应用。",
+      "aliases": []
+    },
+    {
+      "id": "p-schengen-visa-guide",
+      "name": "欧洲签证申请指南",
+      "category_id": "life",
+      "description": "面向中国申请人的欧洲签证办理流程网站：左侧分步流程、右侧决策辅助信息。",
+      "aliases": []
     }
   ],
   "requirements": [
@@ -6203,6 +6243,495 @@
       "status": "requested",
       "note": "当前会话以本地归档标识关联，原平台会话 ID 未提供。",
       "evidence_sha256": "be0f64cdbc88c9955f9aa78fbb23b4aaed01c1a8213321b8c13d13ea510514df"
+    },
+    {
+      "id": "sign-design-doc-formatting",
+      "project_id": "p-sign-translator-v2",
+      "summary": "规整《手语翻译官V2设计说明书》排版（删空白行、统一黑色字体、修正标题序号、插入目录页）并输出 docx",
+      "message_refs": [
+        "[\"zcode\",\"sess_8a6362a6-7b02-4a81-8ac0-c84fef77dfea\",\"msg_mucd4hb2_0a6f2a56-2605-4bc3-9448-fd1d5b4533e5\"]"
+      ],
+      "evidence_sha256": "75556410f47b7c002536e0324ed38e48222bf7cd17812345cb7962e48f3515cf"
+    },
+    {
+      "id": "sign-v2-plan-doc",
+      "project_id": "p-sign-translator-v2",
+      "summary": "参照声音识别项目计划书与 ITPD 示例撰写《手语翻译官（V2）软件开发计划书》docx：重写研发方法与技术路线、按反馈迭代创新与社会价值表述、删减指定段落、整合功能/系统架构图与测试结果、检查全文口径一致、找回丢失输出并清理中间文件",
+      "message_refs": [
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muce14nh_6ce7150e-7a77-448f-a234-e4c850b6586e\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mucebv6h_30f0d703-b45d-4d21-a360-b64737807c5b\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudjw17n_84f8cfc7-9f6b-4cc8-a50f-a66c66af9c89\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudklb4f_10e7d52e-f087-4401-9119-3f1cbeeb4519\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudkzkgv_6238b781-3c8e-4723-8d20-d5b57a64882e\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudl4g0d_bbedf4b8-6776-4e1d-a3e7-50e0a64e86cb\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudl66vr_ca9e7d8d-69dd-4744-bfe0-10ddafd732c9\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudpob4v_43fd650a-8faf-4f2d-afa1-62acc9bd9d27\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudppltw_448a52d6-5470-465d-b10c-6736f18ea58a\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudrer37_3e8f116a-99b2-443d-bea8-e02d39ccdb71\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudrk5s2_12eebf0f-edaf-4cc2-b6be-c275f9792536\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudrko2j_845b0365-d445-4ac2-8adf-bb0fa505d76f\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mudrlhs6_6ebadb9a-cdf2-4571-8eb0-d3254920f02b\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muezhf6d_356f01eb-cb4a-46c4-81b6-fca519dfa7de\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muezjhok_04b36dbc-4c37-46e1-b93f-6040a6e970f3\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muezlh8x_93e17f05-e5a4-4a4b-b6c6-c759f64ede1e\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mueznnm4_ee17daa7-2fba-4115-a408-bf93a74349dd\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf6v8y0_535fb86e-f396-4b75-9003-f111784ba3b4\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf6yvqx_55273ccd-e332-4181-bf23-8c6bb4002d18\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf723tn_163c7027-57d1-4abd-a85b-af0607323cb4\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf73a4a_1fabbde9-e105-4f82-91b6-4ffd0f5e9858\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf751b9_28f8cd0f-664d-4073-83e1-e647e2eac464\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf77zvy_57a7099d-d48f-4186-8e54-2699a410890b\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf786ft_41c6325b-6883-4d01-825c-d980d340af9a\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7913l_a145b126-d8b4-4db9-9e4e-3adbcdb36f50\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf79ftd_9d1fd6d0-bd47-481c-b09b-31b43a797d33\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7acab_f48682ed-d3d2-494f-9382-24a363803988\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7akx0_6a04e23b-d3ef-4015-9119-ecbd60fe7bd0\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7aukz_214daaa1-aadc-458e-98a3-c2ffe4ef55e1\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7deuk_f9fa6717-f01f-4317-bdc3-77a9810fc655\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7dkao_d376d716-2a1d-4f4c-962a-86bed6230a78\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7dr4u_1f1c58c6-66dc-4bb5-b0ef-0cfa76925e59\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7edy8_0e8a0058-d077-4e48-917c-e732bd20fa3f\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7eosx_cde76c18-a79f-4d82-9bb1-5ecf08edd9e9\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7exlh_58eb2e35-b747-45df-b755-6a3bca8e906e\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7pj3f_a6e982bf-f609-43a6-b5c7-0b2390dca529\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7ql1s_723c9085-60c6-414f-97c2-f99b6e09b0e0\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7qwne_1ea8b3c2-6ac1-4dc7-bae3-0bc0898328c2\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muf7r1kw_8778c435-3663-4d1b-a3a8-0bcf6e1aad95\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muffbn45_fc6ba7c4-c324-40df-b38c-a303ec3fa880\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muffbx8r_395fbdfc-79be-45d5-8553-f123827e2d6f\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muffd5s3_c706dae6-5da9-45e1-a5e5-26907dbd36d8\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muffohu2_af92a672-2455-4e4f-9a65-6f6760020a61\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mufft6q4_21b86d6a-15c9-4a7b-a9c9-db37b2ad2044\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muffy82y_381e95ad-be78-4980-abfb-7ff807f62410\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mufj1xzx_4ebd576b-b3bc-444f-b66f-334a428596d1\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mufj8j7v_b5e536b4-622d-4097-9f3f-b1b22d73b76f\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mukmbcaa_20fce7cd-b126-4b11-ad80-a047cc329bac\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mukmygg0_accda878-38bc-4c89-92bc-1126dd484220\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mukni9wa_50439823-5a0f-4107-bb68-0bdd844bd816\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muknwfx6_4fa29378-ee7a-4b7d-b2ff-9e535d4eecaa\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mukny27k_db4b9585-38ed-4e8b-acb4-39d0c4b9637f\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_muko5z5c_dc5cbc10-0995-4e5c-bba9-2d4ca4c8b014\"]",
+        "[\"zcode\",\"sess_47746e27-c00a-47f0-a729-9403299404be\",\"msg_mukohj8s_07806014-18d8-4411-9a24-93ff4a1ba61e\"]"
+      ],
+      "evidence_sha256": "f038522510d6685254298d83e9fd3159a9469504c86e198dc22ea12ae1e9dc3c"
+    },
+    {
+      "id": "sign-requirement-excel",
+      "project_id": "p-sign-translator-v2",
+      "summary": "用 Excel 统计各功能模块需求（需求描述、优先级、用户原声、状态、竞品有无下拉列），并希望改为可实时同步修改的在线表格",
+      "message_refs": [
+        "[\"zcode\",\"sess_bfa8f36c-22a0-4f08-aae3-01738d783d40\",\"msg_mudqcv7u_7329b818-fba7-42a8-89bb-7424a371f1ae\"]",
+        "[\"zcode\",\"sess_bfa8f36c-22a0-4f08-aae3-01738d783d40\",\"msg_mudsfgrq_d8b666ac-0c5f-4951-9a36-8e293c0b4c94\"]",
+        "[\"zcode\",\"sess_bfa8f36c-22a0-4f08-aae3-01738d783d40\",\"msg_mudsl8fi_6ac9b8c4-9952-42a8-9d95-d6b2e8c7ad97\"]"
+      ],
+      "evidence_sha256": "058680c8fc81102ebc5610be0fccf52f6c1036f421d4953c73ade8ff01e4cbc0"
+    },
+    {
+      "id": "sign-coach-llm-constraints",
+      "project_id": "p-sign-translator-v2",
+      "summary": "探讨手语陪练接入豆包 API 的实现形态：是否算 harness、提示词设计、8000 词表约束的分层方案（风格提示、词表校验替换、动态负清单）、自研或开源模型可行性、上下文记忆与前缀缓存，并搭建 RAG 项目骨架验证",
+      "message_refs": [
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumh4p2z_65dea08e-0bcf-4948-b4da-2ed952de9675\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumh855z_9549846f-1e3b-40be-ab81-837de9e4a111\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumhbn97_f1fbf7e5-2ce0-47e4-a62b-8fb42951c165\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumhp3lc_56a75320-d6db-41d1-afdb-98b4c0589293\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumhr1ub_0f2a56e3-9a41-41c5-b57b-540889e1f32b\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumirblt_cce81b39-9c5a-49a3-bdf0-7c7364b188b0\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumiu5lu_04add4c0-b1f8-4a56-a65d-49d8fe553e0f\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumixatt_c85a9dec-3da0-4345-bd66-b045edef336f\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumiz30f_456d8f9e-44bd-4d3f-a1d1-87c4c620565a\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumj19gn_ce286cae-ad3d-45c8-8a2b-c40974ea900f\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumjijin_c1dcf233-9ec5-46cf-9c5e-2cdf0a4c8a59\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumjoa4f_a632939c-d73e-4bca-8a8e-dcc39f594518\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumjvzxb_e7456d96-0e4f-4379-876e-2152438a8514\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mumjxoml_f1b8c1e5-911c-438c-91c2-0976553cbdf3\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_mungqufn_beefa83a-25c1-474f-a005-9ec51a6ea399\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_munhwdho_19803641-bfa3-4fc2-8a13-8433ca2cb8cb\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_muni4qgr_e32da106-ae93-4577-9b8a-7bdabf3e721e\"]",
+        "[\"zcode\",\"sess_ae51d898-c7ee-4119-ab6c-f7127b2554fc\",\"msg_munqy2z3_34d8c1db-d66d-4c72-9a81-dc832f9bf166\"]"
+      ],
+      "evidence_sha256": "8e2ab1717f3d088e8ec93f2a4a2f069a9b7b3902449281adeb78ea20df9b9699"
+    },
+    {
+      "id": "daily-news-9am-briefing",
+      "project_id": "p-0e2af613e7df",
+      "summary": "建立每天上午 9 点的新闻简报定时任务：浏览器访问公开新闻网站，收集过去 24 小时 AI 与大模型、消费电子、综合科技、国际时政财经要闻，去重防重播并注明事件时间、发布时间、来源与关注理由",
+      "message_refs": [
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muklhy35_b2c98e3d-bd87-4da9-b39d-875c9f8615ee\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muknzfr2_16cc6e67-bfe7-4af5-8267-0ee9333d1c32\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muneeq6t_aed5626e-8f65-431b-9fbe-4dddfe4ce9e8\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muotutko_92ff1eca-771d-4cf6-a926-e477b71a9c89\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muq9ak21_284129cf-1ba6-4927-99fc-9bee71710e83\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muroqamh_98909ed3-7eeb-41ac-9eea-b9316f25b964\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_mut46gk3_58a3a07b-3665-4f69-9849-00453cf6fd18\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muujm76v_a583237b-2e6a-40f4-938f-8c26b879beb5\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muvz1xk7_ed49c872-9ac2-4a63-a70d-eb971d2e5881\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muxeho88_33905871-84e4-4d07-9e6e-44a5e81c2236\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_muytxu87_6e6db8b9-ba72-4c87-850a-4c162a0c0607\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_mv09dt6d_0d1893f7-9ee1-47d7-9a03-2001a2e70f53\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_mv1otmzz_a08a76c0-a6ad-4bd3-bae0-5751e75e1e58\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_mv1qfy61_759eee37-c987-4d55-8d40-1c0268aa6d40\"]",
+        "[\"zcode\",\"sess_c6739672-5291-45aa-bd4d-9f52db72357a\",\"msg_mv8u0vag_862c10c2-f466-49e8-a117-e4fb52c9ae4b\"]"
+      ],
+      "evidence_sha256": "edf67e2b5c214f02daf7001a87f4b2c62ca9ef47939c0825ad88db8bd8f196f3",
+      "scheduled": true
+    },
+    {
+      "id": "business-articles-daily-pick",
+      "project_id": "p-0e2af613e7df",
+      "summary": "浏览国内公开商业资讯网站并打开正文，为职场人挑选当日三篇最值得阅读的商业文章，附核心信息、推荐理由与原文链接",
+      "message_refs": [
+        "[\"zcode\",\"sess_511f8b70-8b64-49e2-a658-f069d7a85c22\",\"msg_muklic22_aaecd00b-96e5-455f-a7a8-628c3c99c480\"]"
+      ],
+      "evidence_sha256": "af1b6ea6698862f45e1049ff9172aba758ee9a526f678705b770225a5c6b0e8f"
+    },
+    {
+      "id": "vendor-sound-recognition-matrix",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "调研 iPhone、三星、华为、小米、OPPO 等品牌无障碍声音识别支持的声音种类并输出对比表：补充 vivo 与小米实际清单、标注其他品牌有而 vivo 没有的声音、以 2025 年统计数据更新并把 vivo 放第一列",
+      "message_refs": [
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mukwwb8v_78eaba3b-562b-421c-bb65-4cc50753099b\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mukxbssw_9ccd7482-35fe-4538-8b85-bbdd1045608f\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mukxjc5d_f8fe25d1-e798-4f26-9dc2-994c45f57ad7\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mul2gx3p_cb65baeb-4bb2-4aa3-bea7-e322c69024a7\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mum1wp53_d86fa365-57df-4d04-87cc-f8ffdd7d80d9\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mum23ltv_93bc48e8-6439-4386-aec9-4f43722d040f\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mum2511g_327fb052-0ee9-4858-ad60-98a67f1aef50\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mum2jd1h_1a00283e-d574-4920-bf00-15a811ae200d\"]",
+        "[\"zcode\",\"sess_3ebab54d-e5cf-4ef1-a6d2-8c421cd6f49f\",\"msg_mum2u2zl_4d20ffdb-81bc-431d-a544-066266c182bc\"]",
+        "[\"zcode\",\"sess_d4c1601d-b085-49c1-9044-606477ba460d\",\"msg_mum2z6c3_35e896a9-1934-4820-84b0-0377407a9734\"]",
+        "[\"zcode\",\"sess_d4c1601d-b085-49c1-9044-606477ba460d\",\"msg_mum2zuf4_33af68b7-e9f9-4b61-a1bf-6323464d176f\"]",
+        "[\"zcode\",\"sess_d4c1601d-b085-49c1-9044-606477ba460d\",\"msg_mum33mv6_9c46f8df-8552-4693-bc65-60edc939b62a\"]",
+        "[\"zcode\",\"sess_d4c1601d-b085-49c1-9044-606477ba460d\",\"msg_mum3bbbr_538e9440-abfd-4556-98c8-8ff720fb97f1\"]"
+      ],
+      "evidence_sha256": "8cbf6d974567cdc4589f6418045e3e6443f890dc0d5fbfc8b084465f39a5cde0"
+    },
+    {
+      "id": "miapple-sound-scenarios",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "调研小米与 Apple 的水流声、叫喊声、烧水壶声、警笛声具体包含的声音场景与价值（附来源链接），并梳理竞品可识别与不可识别的边界",
+      "message_refs": [
+        "[\"zcode\",\"sess_8b39f843-9c2c-481d-a1d8-9f913b3e1284\",\"msg_mum4f6vg_8efa281e-66be-4789-b753-f004a2a3830b\"]",
+        "[\"zcode\",\"sess_8b39f843-9c2c-481d-a1d8-9f913b3e1284\",\"msg_mum5fnb8_60f9c45f-e287-4a74-a6b1-a95545fc8d91\"]",
+        "[\"zcode\",\"sess_407cfe91-776c-40a9-876f-ce7b7ce7307b\",\"msg_mv0bwwgt_436bc430-beef-474e-a305-50368a4f4631\"]"
+      ],
+      "evidence_sha256": "b78fa5b635e43a6c8f8c3bddea6a51dcbc06deeccf809c06cf722f56ea392e71"
+    },
+    {
+      "id": "ambient-sound-roadmap-research",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "针对听障用户调研环境音识别还可新增的需求方向，并调研小米 MiDashengLM 落地的具体产品 feature、音频理解大模型格局与厂商投入动机",
+      "message_refs": [
+        "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muyww4rd_2d783433-07fe-4adb-ad3b-27b0a8543a54\"]",
+        "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz58677_6904885c-b2ef-4b0d-b383-a02f074bbe94\"]",
+        "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz5g4th_7330f363-ad12-4e95-885d-69412d691237\"]",
+        "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz6b28a_95e52d9c-b002-428c-9d8c-83f4f6e38ad2\"]",
+        "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz6i5bh_168206f0-b573-4c33-861b-6f57815bf41d\"]"
+      ],
+      "evidence_sha256": "04c5e3dcd98cc39bdb8b3aabe0371f14e36a862dde6364cc7a140ce7180c6aa7"
+    },
+    {
+      "id": "sound-requirements-user-value",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "为声音识别需求清单补充用户价值与用户原声，并以资深无障碍产品经理视角检查是否有遗漏的需求",
+      "message_refs": [
+        "[\"zcode\",\"sess_407cfe91-776c-40a9-876f-ce7b7ce7307b\",\"msg_mv0bimfx_e2c7d3b0-4f8f-46fc-8fd8-71e8c7c0d168\"]",
+        "[\"zcode\",\"sess_407cfe91-776c-40a9-876f-ce7b7ce7307b\",\"msg_mv0ed4dt_4bf315f7-7b06-4aaf-96d5-61cbb562b196\"]"
+      ],
+      "evidence_sha256": "7d12de82863a4fe03d55351dac3be7e253920758217ae51145b81dd3623b949f"
+    },
+    {
+      "id": "sound-direction-popup-demo",
+      "project_id": "p-c367b83d38c0",
+      "summary": "制作声音识别弹窗通知 Demo UI：通知展示识别出的声音文字与前后左右四向方向信息",
+      "message_refs": [
+        "[\"zcode\",\"sess_f33067ff-8cb0-4746-a4f7-10468dae0b50\",\"msg_mv09o3jm_1d5e4cea-7def-4997-8a09-8e8b7fd50384\"]",
+        "[\"zcode\",\"sess_f33067ff-8cb0-4746-a4f7-10468dae0b50\",\"msg_mv0bch7p_ddce09d1-5382-4ab1-857b-f7760651c241\"]"
+      ],
+      "evidence_sha256": "cbb8cb25c8b4c08406675fd4392b5ff9768acec9fa9e63b09a4c8b7fe3ecc5bb"
+    },
+    {
+      "id": "annual-work-review",
+      "project_id": "p-b52062b20ed5",
+      "summary": "梳理过去一年的工作成果与写过的材料，核对完成事项并讨论如何呈现",
+      "message_refs": [
+        "[\"zcode\",\"sess_87829e40-7e7b-48d1-84ac-5cb603032f7d\",\"msg_mv88jks7_8a506374-bfb4-400f-8d2d-3f62c52d7f92\"]",
+        "[\"zcode\",\"sess_87829e40-7e7b-48d1-84ac-5cb603032f7d\",\"msg_mv89b8yi_3e0be176-d6d1-4c1e-b116-fe4d3704eb15\"]",
+        "[\"zcode\",\"sess_87829e40-7e7b-48d1-84ac-5cb603032f7d\",\"msg_mv89hl24_ad5c4ebc-06ae-4973-95c2-967a53f885b5\"]"
+      ],
+      "evidence_sha256": "0a17c361dd60c833468061f83dca2143693a77f0323a3d723f845f2c687c79cd"
+    },
+    {
+      "id": "boardmix-plan-to-resume",
+      "project_id": "p-b52062b20ed5",
+      "summary": "通过浏览器读取并理解 BoardMix 白板上的产品规划，据此在简历中呈现产品规划能力",
+      "message_refs": [
+        "[\"zcode\",\"sess_cdea1242-cdc6-4e09-9237-07c541025d6c\",\"msg_mv89gyv3_1f9ec669-c995-4e4b-b722-de64e80ecd2c\"]",
+        "[\"zcode\",\"sess_cdea1242-cdc6-4e09-9237-07c541025d6c\",\"msg_mv89k1by_d8eff644-e628-415f-be86-a0a7586b6152\"]",
+        "[\"zcode\",\"sess_cdea1242-cdc6-4e09-9237-07c541025d6c\",\"msg_mv8b1zyb_73c4ba2b-563d-419f-ace8-55a0851a4595\"]"
+      ],
+      "evidence_sha256": "4b2d4f9980097c0e1a2f222e2de8e1597ad941727383ea7059e6bd7438af8d8c"
+    },
+    {
+      "id": "ai-pm-roles-research",
+      "project_id": "p-6abdeded6838",
+      "summary": "梳理 AI 产品经理求职的岗位方向（Agent 产品、AI 应用产品等），并到主流公司官网调研对 AI 产品经理的岗位要求",
+      "message_refs": [
+        "[\"zcode\",\"sess_464150b2-5a9b-47f7-b2d6-e5b2a75ae117\",\"msg_mukx9tkv_a2ee5667-bad2-44c6-9fac-b5ee691d9ebb\"]",
+        "[\"zcode\",\"sess_464150b2-5a9b-47f7-b2d6-e5b2a75ae117\",\"msg_mul0qusp_e7fb6150-04f8-4802-a15b-b41298ea852c\"]",
+        "[\"zcode\",\"sess_2f3280b1-4d7d-4727-84f4-2fc2e4bb3e96\",\"msg_munrfyfq_150ef581-66eb-4f02-a7e6-779dac109612\"]"
+      ],
+      "evidence_sha256": "dfde9bd8a848b35ca12a60690ed99792693b24348d40765869b99e49afbbb3c1"
+    },
+    {
+      "id": "ai-glasses-competitive-report",
+      "project_id": "p-6abdeded6838",
+      "summary": "输出一份有深度的 AI 眼镜竞品分析报告，用于求职 AI 眼镜产品经理岗位",
+      "message_refs": [
+        "[\"zcode\",\"sess_bf2c1e42-016d-472a-986e-51c6189218f3\",\"msg_muko8gta_b41729fe-602d-49dc-b4a4-9f93e478f47b\"]"
+      ],
+      "evidence_sha256": "b9b68360126bd217f5e84991d1ce71205533a9cf0e987c271947c4f7e24f65f8"
+    },
+    {
+      "id": "agent-tool-internals",
+      "project_id": "p-ai-pm-learning",
+      "summary": "了解 codex、ZCode、deepseek harness 等编码 Agent 的构建方式：agent.md 的注入机制与执行力度、每轮上下文组装、cursor 与 Claude Code 的定位差异、豆包与 ZCode 处理速度差异、trae 等同类工具的真实使用情况",
+      "message_refs": [
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mume6o08_c711c2e6-f953-4562-b97a-d8ae47421dc6\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mume8a4a_276647a5-efa4-45ce-a9c0-fc0942ce3d5d\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumeukl8_cc8c497e-730a-4d92-95a9-be3dc04df856\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumeyky0_9adbe69b-19b7-4caa-90ce-609242c462e5\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumgppwi_1eb7ebab-146b-4992-b547-d579836962f7\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumhl0ms_72e183d2-acfd-47f0-a46f-248a0dc09022\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumhmz0w_98aa1820-e4c1-4e4c-b564-ba712b3881f2\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumhuse4_a0d87492-877b-4c30-a443-2a7c9e6e77d2\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumi8505_6524d551-98f9-444a-adb6-d6e1c29f33db\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mumklxgw_55430b46-cf49-415c-bebe-56498dd28953\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mung2z2n_3fb6b79e-2a85-4a37-884f-10dace260428\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_munremfy_94222ce7-4309-4bb5-b724-ce3260ddded1\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_munri2g2_2bdd0f27-166b-4be5-a068-c7b409f6dbfd\"]"
+      ],
+      "evidence_sha256": "c4b7f6b522d39b7b71f82bb084ca6256c37720e2c7019c6f5d2860b2b30e4715"
+    },
+    {
+      "id": "ai-interview-answers",
+      "project_id": "p-ai-pm-learning",
+      "summary": "准备 AI 产品经理面试问答：AI 给自己带来的改变（结合他人观点总结）、心目中最好的 AI 产品",
+      "message_refs": [
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mukocd2c_94b22b5f-0c8d-4ee4-afd3-96cea133c804\"]",
+        "[\"zcode\",\"sess_b2b5b6c7-af43-4790-9219-d3bc2e9df95b\",\"msg_mukoq7sx_d3a4986c-9c73-439b-b9ea-2f11c20b567c\"]"
+      ],
+      "evidence_sha256": "042f6ffdd279e58e0be8061694e22e18fe754852bb2ac5c7a2732e573f410072"
+    },
+    {
+      "id": "llm-fundamentals-learning",
+      "project_id": "p-ai-pm-learning",
+      "summary": "明确大模型能力边界与基本原理的学习方法：学习资源从哪来、重点关注什么、学习目标是什么",
+      "message_refs": [
+        "[\"zcode\",\"sess_e91d45d5-6b74-4af0-b0da-97ed5237fb96\",\"msg_mv1qjtzi_16d9166e-ee93-41db-9e79-655538843358\"]"
+      ],
+      "evidence_sha256": "6a47e8d8ea575e284bed02e55eb0ad509752fced6078c99c9c0353309f7b62fa"
+    },
+    {
+      "id": "hci-evolution-thinking",
+      "project_id": "p-6c1991f61706",
+      "summary": "深度思考人机交互的演进脉络、当前所处位置与未来形态，梳理每个转折点的代表性案例，并用 evolution-timeline 呈现",
+      "message_refs": [
+        "[\"zcode\",\"sess_e0c9bffa-a56f-452d-b4e4-dd5d9cca293c\",\"msg_munrmdx7_00c2fb06-4498-421c-a744-efbfecbbb4a2\"]",
+        "[\"zcode\",\"sess_3de8844d-c380-4969-8391-83f9cffd8e95\",\"msg_munrrx20_74489265-f59e-4ff1-a5f1-ab5029d4cb86\"]"
+      ],
+      "evidence_sha256": "93109657751a18a601b28787a401e67e6434c54702ae6888757250494301f2bf"
+    },
+    {
+      "id": "reddit-x-ai-tools-scan",
+      "project_id": "p-6c1991f61706",
+      "summary": "调研 X 与 Reddit 上大家最近在用什么 AI 工具、做了哪些有趣的内容",
+      "message_refs": [
+        "[\"zcode\",\"sess_639c0eca-bf03-4e41-9884-202b2f8a0531\",\"msg_mungx4zk_a30fd84a-0bab-4bc1-a6f2-cab8995be086\"]"
+      ],
+      "evidence_sha256": "5dd4842242c2bd2749d0cc18d9ef4ac7ec129daa8144c7f54240cf4d5746f9f3"
+    },
+    {
+      "id": "follow-builders-schedule-research",
+      "project_id": "p-10e772a84a69",
+      "summary": "调研 Zara Zhang 的 Follow BUILDERS 每天抓取信息的时间",
+      "message_refs": [
+        "[\"zcode\",\"sess_da68a6de-1a5c-4f45-8ad2-e8e613a44786\",\"msg_munppyrl_b49f5567-e00a-41c2-ace8-756ed0e81fc2\"]"
+      ],
+      "evidence_sha256": "56b48af0cc1d2557ecd7e1672140938cf45c5cc976c9e7f466db437360bbfc6c"
+    },
+    {
+      "id": "run-follow-builders-on-demand",
+      "project_id": "p-10e772a84a69",
+      "summary": "手动运行 Follow Builders 获取当日资讯，并希望把每日内容推送到手机",
+      "message_refs": [
+        "[\"zcode\",\"sess_4c349c47-388a-4285-a799-34c3e8e91919\",\"msg_mv1pcocy_6bed7048-4488-4995-ba94-6ac5e199992a\"]",
+        "[\"zcode\",\"sess_8cec66f1-f09f-4df9-b4c0-cf15af3ad869\",\"msg_mv8u0x08_0dbadadd-b90e-4854-98be-05debf8c8c63\"]",
+        "[\"zcode\",\"sess_8cec66f1-f09f-4df9-b4c0-cf15af3ad869\",\"msg_mv8w6oe0_3a39a5d1-c56e-4703-a341-e681b0498ed2\"]"
+      ],
+      "evidence_sha256": "00f1d169eac481f98074f2a0d340bedfa38faa1255d90b79852c708f6f81906a"
+    },
+    {
+      "id": "agent-ppt-skill-research",
+      "project_id": "p-7117be67781a",
+      "summary": "梳理 ZCode、Codex、Claude Code 收到做 PPT 请求时的处理规则与所用技能，用于完善文本转 PPT 的自动排版策略",
+      "message_refs": [
+        "[\"zcode\",\"sess_e8b57364-5c5c-40d8-bc67-2ae0ed8da625\",\"msg_munslxb3_ac0bc14b-f3b6-46be-8167-fa6035874076\"]",
+        "[\"zcode\",\"sess_e8b57364-5c5c-40d8-bc67-2ae0ed8da625\",\"msg_munso3qm_ec9f554b-5145-4c9a-899e-c8c402007254\"]",
+        "[\"zcode\",\"sess_e8b57364-5c5c-40d8-bc67-2ae0ed8da625\",\"msg_munsywcn_658e5fb9-fe85-403b-9d68-4718c46468dd\"]",
+        "[\"zcode\",\"sess_e8b57364-5c5c-40d8-bc67-2ae0ed8da625\",\"msg_muntsjtr_ed1193e3-00a6-4c9e-aba8-064b63c5d77a\"]"
+      ],
+      "evidence_sha256": "05aae5f0f7d58a9e0ec0b91bada1c100805acad7cb5e7e1af0cb8186716bf626"
+    },
+    {
+      "id": "figma-mcp-support-check",
+      "project_id": "p-f3553805fa8f",
+      "summary": "确认 ZCode 是否支持 Figma 的 MCP 接入",
+      "message_refs": [
+        "[\"zcode\",\"sess_104ade3d-106b-45b6-8ac5-b3d3732d62a5\",\"msg_mul3lg75_d191607e-6eab-4480-927d-fd6d090a6535\"]"
+      ],
+      "evidence_sha256": "af6edbf96947e796929d7ff6b7771e7fb69da2170e27b3483cc567a6690c29bc"
+    },
+    {
+      "id": "install-typesafe-skill",
+      "project_id": "p-bc90278379c9",
+      "summary": "安装 TypeSafe Skill 并用于项目工作",
+      "message_refs": [
+        "[\"zcode\",\"sess_ccfe75e3-3b4d-4de1-a126-bb2460802820\",\"msg_mul4bb3d_37897265-7109-4999-8cf5-919f7d1902d2\"]"
+      ],
+      "evidence_sha256": "2e760ac11f90219315413271dd67ac935c6bdbc84e4e00c0adaeef1b403cbb47"
+    },
+    {
+      "id": "obsidian-schedule-tidy",
+      "project_id": "p-obsidian-calendar",
+      "summary": "以产品经理视角整理 Obsidian 的文件与历史操作记录，让日程记录查看更方便",
+      "message_refs": [
+        "[\"zcode\",\"sess_8e723eae-7902-4d8f-89f0-9377d1417d76\",\"msg_mukpun07_3f138ef6-882e-4a34-b672-54a9a1216dcc\"]",
+        "[\"zcode\",\"sess_8e723eae-7902-4d8f-89f0-9377d1417d76\",\"msg_mukqhzsw_140f4b76-3a93-4947-abb7-e18abe5a9a92\"]"
+      ],
+      "evidence_sha256": "7180c9ee6e2ea70ab6b3601dbf7ad0434d356e36b9031e5d06437a3c0f4d9feb"
+    },
+    {
+      "id": "calendar-click-create-diary",
+      "project_id": "p-obsidian-calendar",
+      "summary": "支持从日历或日记索引点击日期创建/跳转当天日记，调整布局显示待完成待办，并排查整合后不生效的问题",
+      "message_refs": [
+        "[\"zcode\",\"sess_e2c5bb1d-560b-4163-be6f-5ecfa81c3680\",\"msg_munia7ma_ad8e0bac-5a51-41fa-8326-af18d32702d9\"]",
+        "[\"zcode\",\"sess_e2c5bb1d-560b-4163-be6f-5ecfa81c3680\",\"msg_munj070h_ddc7e59f-2a1a-4fe5-987b-cc95fd5331f5\"]",
+        "[\"zcode\",\"sess_e2c5bb1d-560b-4163-be6f-5ecfa81c3680\",\"msg_munlka6i_b5ddaed1-8541-4399-b77a-39139c85a773\"]",
+        "[\"zcode\",\"sess_e2c5bb1d-560b-4163-be6f-5ecfa81c3680\",\"msg_munpsplq_80c77cff-3141-47e7-8213-505ed00bd3ba\"]",
+        "[\"zcode\",\"sess_8e723eae-7902-4d8f-89f0-9377d1417d76\",\"msg_mukvp1jj_caff1e97-1abf-4f1c-badf-174dccd438b4\"]"
+      ],
+      "evidence_sha256": "9b507c6fc7bfc1c38ee7271484d92b9b47f6fed1818f2e819e3ca395b67beaf1"
+    },
+    {
+      "id": "disk-usage-analysis",
+      "project_id": "p-pc-cleanup",
+      "summary": "分析电脑磁盘占用（区分系统文件、应用数据与个人文件）并分批执行清理：OEM 安装包缓存、崩溃转储、npm/Chrome 缓存、应用更新包、临时文件与回收站等",
+      "message_refs": [
+        "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_muklhcl7_6ac4c3b5-5a9b-4377-a0a9-293604478891\"]",
+        "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_mukmgk7t_b7aa67f8-4546-44d4-861b-68d3ed9eaaa2\"]",
+        "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_muko0elh_7293fc73-0a68-4f36-adda-c008ef9d5167\"]"
+      ],
+      "evidence_sha256": "bcc170f4d90025cb0e7a08433577cea188fcf2150c255cd15360b9762173882b"
+    },
+    {
+      "id": "d-drive-reorganize",
+      "project_id": "p-pc-cleanup",
+      "summary": "制定并执行 D 盘文件整理方案：文档迁入 02-文档、项目整体移入 01-项目",
+      "message_refs": [
+        "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_mume9fmv_94d35ed6-abc2-4b6f-8c60-2cde96321cb4\"]",
+        "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_mumf9ayo_d880f886-194f-4b27-9037-50cee5e70d4c\"]"
+      ],
+      "evidence_sha256": "50461681b4d27253890d51fba84c13821a8fa5bae7d2f74480cc4a7d6751f55b"
+    },
+    {
+      "id": "downloads-duplicate-scan",
+      "project_id": "p-pc-cleanup",
+      "summary": "扫描下载文件夹的重复文件、旧安装包与临时文件，按预计可释放空间排序给出整理建议（先不动文件）",
+      "message_refs": [
+        "[\"zcode\",\"sess_122b7d48-e7e2-4629-a61e-61b69fcc12db\",\"msg_mukliydk_49dc3c53-563a-4ccd-84d5-afe06ff26533\"]"
+      ],
+      "evidence_sha256": "92947d07fd53fe5393b547ffcb8aa1f7faf7bd17123a532c467f86847a5266de"
+    },
+    {
+      "id": "uninstall-kimi",
+      "project_id": "p-pc-cleanup",
+      "summary": "卸载电脑上的 Kimi 应用",
+      "message_refs": [
+        "[\"zcode\",\"sess_8686ede4-3d9f-4db1-a05d-e2f35b071b09\",\"msg_mukqk6o8_9d8e6b75-4a5b-4bec-9cd1-75ea17e5885a\"]"
+      ],
+      "evidence_sha256": "139e11ae2769815a1e5c2e1a70831d3c2d3e25172140476f0f98866a4b261033"
+    },
+    {
+      "id": "schengen-visa-process",
+      "project_id": "p-schengen-visa-guide",
+      "summary": "系统梳理欧洲签证申请流程：分步操作、详细费用、必选/可选材料与直接下载入口、签证中心选择与签证类型，区分流程内步骤与准备期注意事项",
+      "message_refs": [
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_munhq6qs_17e79c0e-d27f-4d74-8b47-fb2c06df9406\"]",
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_munhvy71_7a4ccc77-3c1c-4704-b5ec-117515aecb3d\"]",
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_muni3gd9_19a0eaa8-260c-43e4-a3d9-eadf8f5fad31\"]"
+      ],
+      "evidence_sha256": "a618f9fcb141842249c413a2ce66a0ed3d816837c908ae883c026a09d273aaf9"
+    },
+    {
+      "id": "visa-guide-website",
+      "project_id": "p-schengen-visa-guide",
+      "summary": "把签证办理流程做成面向中国申请人的 HTML 决策网站：左侧申请流程、右侧每步决策辅助信息，并多轮精简页面文案、去掉冗余提示与内嵌表格",
+      "message_refs": [
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_muniwi8j_015b1c32-9e02-4c4c-993b-7d9d5fe805b6\"]",
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_munq3bsk_01eff09c-cb85-4d3e-a63e-d516baa2bf92\"]",
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_munqqude_9912eabe-97de-4e2f-be1a-051fe3532a25\"]",
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_munrqwjn_c10c54f0-57c0-414d-ad4d-fa2a32ecaa1a\"]",
+        "[\"zcode\",\"sess_e9f60736-c735-4df5-8167-4ff3c7fc12df\",\"msg_muns6r41_35e27208-ca86-4250-ae00-af228524723d\"]"
+      ],
+      "evidence_sha256": "b98c8cff0620bc9c261167b8bdd30ef3c5362a2945e875f8e8d58c3bd4a9734f"
+    },
+    {
+      "id": "chatgpt-quota-visualizer",
+      "project_id": "p-12b3e30398a4",
+      "summary": "从 GitHub 寻找现成的 ChatGPT 剩余额度可视化工具，解决额度显示不易找的问题",
+      "message_refs": [
+        "[\"zcode\",\"sess_ee2e6f92-0d18-4719-a755-3b286ad94e16\",\"msg_mv1tstig_78b43d5d-7a6b-4f20-8c93-27d18bd61fe5\"]"
+      ],
+      "evidence_sha256": "82c3c09ecb3d57a5c60b7353aaca2ec1f1f642a419703d605c9371435bedcf11"
+    },
+    {
+      "id": "taskarchive-simplify-readme",
+      "project_id": "p-9b6182eb6228",
+      "summary": "精简 TaskArchive 仓库 README：仅保留 Skill 目的、使用方式与个人网址示例，删除其余内容",
+      "message_refs": [
+        "[\"zcode\",\"sess_fba8ab6b-7a6e-4260-b10b-26569f60c795\",\"msg_mvarksqq_1d77b5c3-343e-4f7b-a2be-4e15cf56f721\"]"
+      ],
+      "evidence_sha256": "67a6cf44e0fda3a6a281ed7693cef3e7a658d69fc00e050c7e608ea6b9246c6f"
+    },
+    {
+      "id": "taskarchive-install-skill-zcode",
+      "project_id": "p-9b6182eb6228",
+      "summary": "在 ZCode 中从 GitHub 仓库安装 TaskArchive Skill",
+      "message_refs": [
+        "[\"zcode\",\"sess_460034f0-60c6-41b7-a2d0-f8c2ab8dc160\",\"msg_mvasp6ew_637ce960-ad29-4ba9-96aa-680e466995ae\"]"
+      ],
+      "evidence_sha256": "1bede3f0de7f3c8b5be6939cfc38d9e17fdf9e07da82873748797faab9e3974c"
+    },
+    {
+      "id": "taskarchive-merge-zcode-desktop",
+      "project_id": "p-9b6182eb6228",
+      "summary": "将本机 ZCode 桌面端历史需求合并进已有 TaskArchive 档案网站，并设置每日更新；要求 Git 提交默认使用 Gmail、不使用工作邮箱",
+      "message_refs": [
+        "[\"zcode\",\"sess_16396860-67f3-479c-b734-da16113590ee\",\"msg_mvasqqar_a7ce0128-fe82-4f12-aa36-52db26035983\"]"
+      ],
+      "evidence_sha256": "b710ef427aacd5594b2c6501177b7fd3d354e112d00802c06f115a2278fb4dbe",
+      "status": "in_progress"
+    },
+    {
+      "id": "taskarchive-site-unreachable",
+      "project_id": "p-9b6182eb6228",
+      "summary": "反馈从 TaskArchive 仓库打不开个人网站的问题",
+      "message_refs": [
+        "[\"zcode\",\"sess_8b7ad033-f8b7-4106-bd23-1caddbe76812\",\"msg_mvassile_3a79e2ba-8547-46e4-a079-91a869cd78e2\"]"
+      ],
+      "evidence_sha256": "51e8ec10f0d80b5f94ab925553a3011194600838e8001111b82ed4c1506d7d75"
     }
   ],
   "excluded_task_ids": [
