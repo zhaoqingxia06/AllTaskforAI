@@ -1,67 +1,30 @@
-# 让其他 Agent 更新这个网站
+# 写入 TaskArchive
 
-内容整理的唯一规范是 [ARCHIVE_RULES.md](ARCHIVE_RULES.md)（v2.0）；本文件说明当前可运行的 v1 接口及迁移边界。每次运行先读取默认分支上的最新三份文档。
+每次更新前读取 AGENTS.md、ARCHIVE_RULES.md 和本文最新版本。
 
-把本仓库链接交给其他平台，并把下面这段话作为任务：
+## 当前网站结构
 
-> 读取此仓库默认分支最新的 AGENTS.md、ARCHIVE_RULES.md 和 CONTRIBUTING.md。把我在当前平台发布的真实任务及后续消息写入 data/contributions/ 下属于本平台的 JSON 文件，保留其他平台已有数据。运行 python3 scripts/build.py 验证，它会合并所有平台并更新根目录 index.html；把平台数据与生成的 index.html 一起推送 main（有写权限）或提交 Pull Request。合并后工作流再次核对并重建同一个档案文件，托管由已有工作流处理，本步骤不更改托管配置。不得用单个平台HTML覆盖统一入口。
+公开页面已使用 v2 四级视图：动态大类别、项目介绍与时间跨度、归并后的需求、带来源与时间的关联消息。站点继续通过 `python3 scripts/build.py` 构建；该命令先校验所有旧平台快照，再生成同一入口的 v2 页面与 dist 发布目录。不要手写 index.html。
 
-## 当前文件格式（v1，兼容阶段）
+## 平台来源
 
-现有构建仍限制类别枚举、按会话生成任务行，不支持 v2 的动态分类、跨会话需求归并和四级原文引用。不得直接增加新类别导致构建失败，也不得把当前每条消息摘要声称为 v2 语义合并需求。需要这些结构时先完成独立迁移，之后各平台才能按新接口写入。迁移前保留现有来源格式与原文，整理规则以 ARCHIVE_RULES.md 为目标，不以本文件的旧字段结构反推规则。
+- 既有 `data/codex.json`、`data/contributions/zcode.json`、`data/contributions/chatgpt.json` 保留原样，由原采集平台维护。v1 快照可继续进入构建，新增内容在语义复核前不自动塞进旧需求。
+- 新接入使用 `data/organized_sources/<platform-client>.json`（schema_version=2）。格式为 source、client、coverage、conversations；每个会话有 id、messages；消息有 id、role=user、text、sent_at、attachments。sent_at 使用带时区 ISO 8601、日期或 null。原平台 ID 不可获取时明确使用本地归档 ID，不能假称是真实 ID。
+- 只更新自己平台的文件，复用共享类别和项目，禁止覆盖其他来源。source 区分平台，client 区分网页与桌面。
+- 旧 ChatGPT 文件是历史整理稿，公开界面明确标“非逐字原文、时间未核验”；不使用其中构造的时刻作为原文发送时间。以后取得真实导出时按原消息 ID 关联替换，保留追溯关系。
 
-例如 `data/contributions/zcode.json`：
+## 语义目录
 
-```json
-{
-  "schema_version": 1,
-  "source": "zcode",
-  "tasks": [
-    {
-      "id": "replace-with-real-stable-task-id",
-      "category": "做产品",
-      "group": "实际产品名",
-      "created_at": "2026-10-16T12:00:00+08:00",
-      "updated_at": "2026-10-16T13:00:00+08:00",
-      "status": "completed",
-      "scheduled": false,
-      "archived": false,
-      "messages": [
-        {"id": "m1", "time": "2026-10-16T12:00:00+08:00", "text": "用户的第一条原始需求"},
-        {"id": "m2", "time": "2026-10-16T13:00:00+08:00", "text": "用户后续真实发送的补充"}
-      ]
-    }
-  ]
-}
-```
+`data/organized_catalog.json` 保存 categories、projects、requirements。每个项目含 id、category_id、name、description、aliases。每条需求含稳定 id、project_id、summary、来源引用、evidence_sha256；摘要必须由 LLM 阅读上下文后归并。
 
-以上仅为格式示例，不要把示例任务提交到正式数据。
+- `legacy_selectors` 引用旧快照 task_id 和归一化消息 indices；不要更改已选消息的顺序或内容。新增消息用新的显式选择或更新索引并复核。
+- `message_refs` 用于 v2 原文，取 `json.dumps([source,conversation_id,message_id],ensure_ascii=False,separators=(',',':'))`。
+- 相同目标的追问与修复合并；一条聊天可拆多个需求，不同聊天可合并。新原文未关联时显示待整理数量，不自动关键词分类。
+- evidence_sha256 的规范见 scripts/archive_v2.py 的 fingerprint；重新阅读证据后更新，禁止静默接受变化。没有可靠证据不标已验收。
+- 修改目录前获取最新分支；并行冲突时重新合并，不能强推。
 
-- `source` 使用稳定的小写英文标识；`codex` 已保留给本机同步。可使用 `zcode`、`chatgpt` 等。
-- 同一平台的任务 `id` 必须唯一且稳定。构建时自动加平台前缀，避免与其他平台冲突。
-- 时间须为带时区的 ISO 8601。当前 v1 会以会话时间补缺失消息时间，这不符合 v2 精确追溯要求；采集端应提供每条消息真实时间，取不到时不得伪造，须等待支持未知时间与精度的迁移。标题必须综合第一条需求和全部后续子任务，用一句话概括整段会话的工作范围，不能直接采用第一句或最后一句；没有原文的任务允许 `messages: []` 并提供 `title`，页面会注明缺原文。
-- 状态允许 `completed`、`failed`、`inProgress`、`interrupted`、`unknown`。它表示执行状态，不表示用户验收。
-- 已有任务追加消息时，更新原记录及 `updated_at`，不要创建第二份任务。
-- 不同平台可使用不同文件；同一任务不能在两个文件中重复。
-- 需要组描述时，修改 `data/curation.json` 的 `groups` 映射。
+## 构建与验证
 
-公开读取不需要登录。写入需要平台支持 GitHub 写权限，或通过 PR 提交并合并；只提供一个网址，不会自动授权平台读取聊天历史或写仓库。
+运行 `python3 -m unittest discover -s scripts -p 'test_*.py'` 和 `python3 scripts/build.py`，检查统计、引用、来源覆盖及页面；提交变化的数据、脚本和生成的根 index.html。dist 由工作流重建发布，不单独提交。
 
-## 数据接口
-
-固定入口：[index.html](https://github.com/zhaoqingxia06/TaskArchive/blob/main/index.html)。它内嵌所有平台数据，可独立打开并下载全部任务 JSON。构建的 dist/tasks.json 和 dist/feed.json 可供本地工具核对数量与内容摘要。
-
-## 任务标题总结
-
-- 阅读任务的全部用户消息，提炼“做了什么、涉及哪些核心工作”，用一句话命名；不要因执行状态为完成就声称已经验收。
-- 总结保存在 `data/curation.json` 的 `task_summaries`，以构建后的稳定任务 ID 为键；不修改任何平台的用户原文。
-- 每项为 `{"text": "一句话总结", "messages_sha256": "摘要"}`。摘要计算方法：对按顺序排列的所有消息正文列表执行 `hashlib.sha256(json.dumps(texts, ensure_ascii=False).encode()).hexdigest()`，其中 `texts` 取构建归一化后的 `messages`。
-- 追加或修改子任务后，重新阅读全部消息并更新总结与摘要；构建会使过期总结失效，暂按全会话中的工作类型生成概括并标记 `summary_needs_review`，供下次整理复核。此兜底是规则提取，不是大模型语义总结。
-- `source_title` 保留原始索引标题，`messages` 保留全部正文；页面与下载数据使用统一的总结标题。
-
-## v2 迁移要求
-
-- 以 ARCHIVE_RULES.md 为内容规范，先增加稳定类别、项目、需求与原文引用的数据层，再修改构建与渲染；保留 v1 来源记录并进行可回滚迁移。
-- 同时修改动态类别校验、三级需求合并、二级首末时间、原文时间精度、来源环境、统计和搜索；不能只改前端标题或文案。
-- 对已有原文的隐藏与过滤使用可追溯标记；已有的“保留历史”约束仍生效。
-- 规则更新不等于三个平台的定时任务指令已经修改。每个平台的任务需自行接入“运行前读取最新规范”的步骤。
+GitHub Actions 只重建已接入的数据，不能读取用户私有聊天。定时采集必须由拥有实际历史权限的平台任务运行。站点最近同步与项目最近进展分开；只用有效原文计算项目日期。

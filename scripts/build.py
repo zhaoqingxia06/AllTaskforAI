@@ -188,7 +188,12 @@ def main():
                 source_counts=dict(collections.Counter(t['source'] for t in tasks)),
                 content_sha256=digest, data_url='./tasks.json')
     (dist / 'feed.json').write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n')
-    print(json.dumps(feed, ensure_ascii=False))
+    if (ROOT / 'data/organized_catalog.json').exists():
+        from organized import build_organized
+        organized = build_organized(ROOT, tasks, public, previous)
+        print(json.dumps({'schema_version': 2, **organized['stats']}, ensure_ascii=False))
+    else:
+        print(json.dumps(feed, ensure_ascii=False))
 
 
 if __name__ == '__main__':

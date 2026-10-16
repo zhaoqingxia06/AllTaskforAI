@@ -4,6 +4,8 @@
 
 - **数据来源**：Codex、ZCode、ChatGPT 中已接入的任务及用户对话原文。
 - **更新时间**：Codex 每天北京时间 12:00；其他平台推送数据后自动合并更新。
-- **网页地址**：[查看任务档案](https://zhaoqingxia06.github.io/TaskArchive/)
+- **网页地址**：[查看任务档案](https://zhaoqingxia06.github.io/AllTaskforAI/)
 
 - **接入与整理规则**：[统一规则](ARCHIVE_RULES.md) · [写入接口与迁移限制](CONTRIBUTING.md)。其他平台每次更新前须读取最新规则。
+
+当前网站按大类别、项目、归并需求、关联原文四级展示；保留旧平台数据，区分真实原文与历史整理稿。自动采集取决于各平台历史读取权限，不等同于网页发布工作流。

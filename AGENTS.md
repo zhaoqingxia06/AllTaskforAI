@@ -7,7 +7,7 @@
 - Only record real user requests, meaningful constraints and feedback; exclude tool/system/agent/internal execution material from requirements.
 - `data/codex.json` belongs to the local Codex collector. Other platforms only update their own stable file in `data/contributions/`.
 - Reuse stable IDs and shared project aliases. Update records in place; preserve other platforms' contributions and user corrections. No force pushes or history rewrites.
-- The current schema is still v1. Do not assume the v2 hierarchy is implemented or silently add unsupported fields. Follow CONTRIBUTING.md for migration boundaries.
+- The public view is v2, compiled from unchanged legacy snapshots plus data/organized_sources/*.json and the LLM-reviewed data/organized_catalog.json. Follow CONTRIBUTING.md; do not replace other platforms' snapshots or regenerate semantic summaries with keywords.
 - For legacy task titles, summarize all relevant user messages. Update reviewed summaries in `data/curation.json` when source messages change; never use just the first message as the display title.
 - Run `python3 scripts/build.py` and the repository tests before pushing. Commit generated root `index.html` only if it changes. Never hand-edit generated output or replace the unified entry with a platform-only page.
 - Never commit credentials, authentication exports or local databases.
