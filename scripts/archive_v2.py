@@ -202,7 +202,7 @@ def render(data):
                 note = ('<p class="requirement-notes">'+esc(r['note'])+'</p>') if r.get('note') else ''
                 rows.append(f'<details class="task" data-search="{esc(search)}" data-sources="{esc(json.dumps(srcs))}"><summary class="task-row"><time>{esc(time_label(r["last_at"], tz))}</time><span class="task-title">{esc(r["summary"])}</span><span class="markers">{mark}<span class="sub-count">{len(originals)} 原文</span><span class="chevron">⌄</span></span></summary><div class="task-body">{note}{"".join(bodies)}</div></details>')
             times = '最早记录 '+time_label(p['first_at'], tz)+' · 最近进展 '+time_label(p['last_at'], tz)
-            groups.append(f'<section class="group"><header class="group-heading"><h3>{esc(p["name"])}<span class="group-count">{len(reqs)} 条需求</span></h3><p>{esc(p["description"])}</p><div class="project-times">{esc(times)}</div></header>{"".join(rows)}</section>')
+            groups.append(f'<details class="group"><summary class="group-heading"><h3>{esc(p["name"])}<span class="project-chevron" aria-hidden="true">⌄</span><span class="group-count">{len(reqs)} 条需求</span></h3><p>{esc(p["description"])}</p><div class="project-times">{esc(times)}</div></summary><div class="project-body">{"".join(rows)}</div></details>')
         sections.append(f'<section class="category" data-category="{esc(cat["id"])}"><header class="category-heading"><h2>{esc(cat["name"])}</h2><span>{count} 条需求</span></header><div class="category-content">{"".join(groups)}</div></section>')
     stats = data['stats']
     labels = {'chatgpt': 'ChatGPT', 'codex': 'Codex', 'zcode': 'ZCode'}
