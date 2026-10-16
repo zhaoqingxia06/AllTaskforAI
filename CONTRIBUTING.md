@@ -35,7 +35,7 @@
 
 - `source` 使用稳定的小写英文标识；`codex` 已保留给本机同步。可使用 `zcode`、`chatgpt` 等。
 - 同一平台的任务 `id` 必须唯一且稳定。构建时自动加平台前缀，避免与其他平台冲突。
-- 时间须为带时区的 ISO 8601。标题由第一条消息生成；没有原文的任务允许 `messages: []` 并提供 `title`，页面会注明缺原文。
+- 时间须为带时区的 ISO 8601。标题必须综合第一条需求和全部后续子任务，用一句话概括整段会话的工作范围，不能直接采用第一句或最后一句；没有原文的任务允许 `messages: []` 并提供 `title`，页面会注明缺原文。
 - 状态允许 `completed`、`failed`、`inProgress`、`interrupted`、`unknown`。它表示执行状态，不表示用户验收。
 - 已有任务追加消息时，更新原记录及 `updated_at`，不要创建第二份任务。
 - 不同平台可使用不同文件；同一任务不能在两个文件中重复。
@@ -46,3 +46,11 @@
 ## 数据接口
 
 固定入口：[index.html](https://github.com/zhaoqingxia06/AllTaskforAI/blob/main/index.html)。它内嵌所有平台数据，可独立打开并下载全部任务 JSON。构建的 dist/tasks.json 和 dist/feed.json 可供本地工具核对数量与内容摘要。
+
+## 任务标题总结
+
+- 阅读任务的全部用户消息，提炼“做了什么、涉及哪些核心工作”，用一句话命名；不要因执行状态为完成就声称已经验收。
+- 总结保存在 `data/curation.json` 的 `task_summaries`，以构建后的稳定任务 ID 为键；不修改任何平台的用户原文。
+- 每项为 `{"text": "一句话总结", "messages_sha256": "摘要"}`。摘要计算方法：对按顺序排列的所有消息正文列表执行 `hashlib.sha256(json.dumps(texts, ensure_ascii=False).encode()).hexdigest()`，其中 `texts` 取构建归一化后的 `messages`。
+- 追加或修改子任务后，重新阅读全部消息并更新总结与摘要；构建会使过期总结失效，暂按全会话中的工作类型生成概括并标记 `summary_needs_review`，供下次整理复核。此兜底是规则提取，不是大模型语义总结。
+- `source_title` 保留原始索引标题，`messages` 保留全部正文；页面与下载数据使用统一的总结标题。

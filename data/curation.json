@@ -48,5 +48,1067 @@
     "历史研究资料": "找回历史聊天、访谈视频与已有研究材料。",
     "求职机会扫描": "持续寻找匹配语音、音频、无障碍与 AI 方向的产品岗位。",
     "任务档案": "将各平台的真实需求和补充归档，统一浏览并同步更新。"
+  },
+  "task_summaries": {
+    "019d87d9-62b8-7882-a49a-138e776b9b77": {
+      "text": "开发支持尺寸、分段与布局调整的衣柜设计网页，并优化预览和设置面板的独立滚动",
+      "messages_sha256": "64097412cf7cc3f6bf9f12adfb0dcd6731249a2268e641f5bc26895fc6b48e5f"
+    },
+    "019d95ee-c8d1-7450-9214-e1664282760a": {
+      "text": "开发按出发城市、机票价格和飞行时长筛选目的地的地图网页",
+      "messages_sha256": "ea178e64418d4c0f6cf9918d3d35435514f27d98220fdcbabc66b38b010aa57c"
+    },
+    "019d960c-cc1d-7ed0-b1c0-a0a45f1a3e9b": {
+      "text": "完善旅行地图的航线筛选、区域切换和日期查询，并修复地图显示与缩放同步问题",
+      "messages_sha256": "25a0d6a6a9fcad5859b958fc2202be646f77508732a40d72d325fded0220503a"
+    },
+    "019eac19-2329-74e3-889b-38554100d709": {
+      "text": "了解 Codex 自动化机制并确认任务内容与执行时间",
+      "messages_sha256": "edacf710a28f1da8c7b656859472dcc1ae3f7db5e4cc092869c25fc5c7bffd46"
+    },
+    "019f2bd6-fac8-7721-9ec0-f6b41a741b5c": {
+      "text": "了解 vercel-labs/skills 的用途与使用方式",
+      "messages_sha256": "edc89f143c810dad2717ba8d092993da5575043c482dfa15b6a07e02381ebc2e"
+    },
+    "019f2c1e-3440-76e0-a47c-c62cd2eae720": {
+      "text": "设置每周工作回顾与状态更新任务",
+      "messages_sha256": "93534a542cc92e0e24a4fe07902c67cc771c5e3a4f98aaa0c168cd44cfdd6d9a"
+    },
+    "019f30bd-e73b-7b72-8dc6-2dc4cdcf28bc": {
+      "text": "开发通过摄像头手势控制硬币升降与旋转的网页",
+      "messages_sha256": "e0890c9645ba6f94bf499d543ea8a686cd9ae46551421688de04590f525893ed"
+    },
+    "019f30d3-4bd1-7c71-836c-39a51b6a8316": {
+      "text": "开发粒子轨迹与空中汉字识别网页，并优化轨迹消失规则和页面布局",
+      "messages_sha256": "a22ebe434c70b51e0d677dcda05f19bd945f0e0929fc3eb9d5f32528f9ea09a6"
+    },
+    "019f3105-79e6-78a0-94a4-2c6f13db0299": {
+      "text": "开发握拳旋转、张掌停止的骰子网页，并排查手势识别与动画控制问题",
+      "messages_sha256": "3a939d4c96c6374c89d826147774a3e4dd116ecb11bfdc5f3b943c0a9805a307"
+    },
+    "019f3787-7247-7130-9cc5-b8f813d51c0a": {
+      "text": "将 Figma 简历转换为保持 A4 布局、可编辑并导出 PDF 的网页",
+      "messages_sha256": "20e6edf0f31b190a064d39576eadf6f333e3d3c894738d3eb1398ece42301e40"
+    },
+    "019f3798-819c-7963-afa8-8cc819eee3e0": {
+      "text": "开发在线简历编辑与预览工具，优化布局和素材上传，并沉淀需求评审 Skill",
+      "messages_sha256": "064c1d96343ac0c82136aff44771fbc2761dadeb6346b98abb08a22446fa4a80"
+    },
+    "019f37dd-fcd8-7fc3-a82e-8bb612c2172f": {
+      "text": "安装简历项目、部署到阿里云并配置域名，将 Online Resume 源码公开到 GitHub",
+      "messages_sha256": "11b3acee1737eecf809e50b90286375ae5fd01c809025b78341ce6907ed42d70"
+    },
+    "019f3b04-4365-7e41-93b4-71bf3601340a": {
+      "text": "制作适合社交平台的个人头像，调整三维风格、表情与运动休闲造型",
+      "messages_sha256": "ddd7d57f231b407e24bde46ce1b37d3dfe477ab804a2e2ac67c668f32170c98d"
+    },
+    "019f41b4-d9aa-7cf1-bac0-64e8bc8f494d": {
+      "text": "梳理 Codex 手机端配置与 iPhone App Store 账号切换方法",
+      "messages_sha256": "82509c85c01e7a977b916fd46468fe6530beb44def1fd923f594958fd3a05f4f"
+    },
+    "019f4741-6ce2-7163-b4fe-eb43c005561d": {
+      "text": "建立适配 Obsidian 的投资学习知识库，并补充各章节学习资源",
+      "messages_sha256": "f821a988a925b2fa47ba76b7846483833e15c9f8660fdbaece6cf428e0af3ab1"
+    },
+    "019f475c-a5ea-7ee1-b593-2e50cc36c698": {
+      "text": "排查用户遇到的问题，具体对象待补充上下文",
+      "messages_sha256": "dd7c891df06694febc3ead1500325db2f9e0aa8aacf53f967734cf1384654e70"
+    },
+    "019f47ac-41e7-78b3-818f-8d8d5d377142": {
+      "text": "探索浏览器信息获取能力，并整理小米官方微博的近期帖子",
+      "messages_sha256": "02e296248b8adba088eb7f62332b4e03e5ea95a5515135a84acac980c7934bff"
+    },
+    "019f47b2-a764-7e13-8b2c-12ab247eb02a": {
+      "text": "汇总 OpenAI 与 Anthropic 官方博客的近期重要更新",
+      "messages_sha256": "1b5b78e55dec3e090c32420b3350e3b11b6c6181344f1c9fd8236d970e0f7d1f"
+    },
+    "019f47b3-3115-7fd1-8f16-f590933c1abc": {
+      "text": "浏览 X 当日热点并关注指定账号",
+      "messages_sha256": "24458d62057e0370aa028486a48435aea5315109a65069a59bd833830997bf5e"
+    },
+    "019f47cf-423f-72e2-b691-8a67e1427118": {
+      "text": "了解 Codex 已安排任务的机制并确定安排方式",
+      "messages_sha256": "3749516fc6d9a0d5e300a286383ab825a322eabc90d30dd809fe33933550db4c"
+    },
+    "019f47cf-9476-7593-b046-2cd42f85438f": {
+      "text": "配置每周工作回顾与简短状态更新",
+      "messages_sha256": "93534a542cc92e0e24a4fe07902c67cc771c5e3a4f98aaa0c168cd44cfdd6d9a"
+    },
+    "019f47cf-c6e9-7db0-b141-f9e0ccd7a490": {
+      "text": "制作四家汽车品牌官方微博的每日对比摘要，并保留原帖链接和分享页面",
+      "messages_sha256": "8a4c4d6454a179209326c220ba0ef59ae85387848799031255db1753937b0808"
+    },
+    "019f4a74-39d7-7f01-ac79-55ee055f40fb": {
+      "text": "解决 Figma Profile 文件的字体配置问题",
+      "messages_sha256": "f5c1ad9f426542992a0b7fbe9a5b3c4501662e51abb96320cd2cfbe38b9e683f"
+    },
+    "019f4a80-d4b4-71a2-88e2-e1175fe32017": {
+      "text": "建立覆盖 AI、手机等五个行业的每日观察 HTML，并确定品牌范围与更新时间",
+      "messages_sha256": "23a31e9bb43e918e3ca21e0569f8de5e36462c9feaf951431a5fece96359b002"
+    },
+    "019f4bc0-f55a-7d00-a01e-7a63d2ddd5a1": {
+      "text": "每天汇总 vivo、OPPO、小米官方微博动态并增量保存到 HTML",
+      "messages_sha256": "51d91cfac2d10b1791961a205a87dc1b7e9418bd721b02dc247add19ef154879"
+    },
+    "019f4bc9-16ab-7ca3-96f2-0388249aa905": {
+      "text": "筛选投资与科技一手信息源，设计并试运行可持续获取的每日简报",
+      "messages_sha256": "8a8415a2b28f98af4cf58c98ca7af1ee8acbba361609a8f3febcb972dba8d8a9"
+    },
+    "019f4c24-c5d0-7802-869e-40dc124680e1": {
+      "text": "安装 nuwa-skill",
+      "messages_sha256": "333b001254ef39718066378e15965a4904d85bd656b4e1017d10604ec3963a96"
+    },
+    "019f5183-2d40-78a1-bc48-724f56af7039": {
+      "text": "建立六家手机品牌 AI 动态监测，采用日报加当日增量并修复来源遗漏",
+      "messages_sha256": "8a170b8ca9107bd30037ba0fd93bdbd6153a5858c3ad0d5075d13b6c74dd185b"
+    },
+    "019f51e1-f74b-7401-b35f-f841a49b4294": {
+      "text": "本地部署 TrendRadar 并确认安装结果与使用方式",
+      "messages_sha256": "2b8bb5f81f61186ddcc046cc148220b3e28b3ee00261618e67a0be03f440942b"
+    },
+    "019f5203-0cc1-7c11-9e5c-1113fa4bb403": {
+      "text": "明确基金投资目标，并梳理信息获取、基金筛选与买卖时机的执行方法",
+      "messages_sha256": "9c4f7d3738465872ddd4069d7b80b8d1a4bc0b69a89b0287411ac169331c7cd3"
+    },
+    "019f522d-0f00-7fe0-92b3-f3ea4fbe6170": {
+      "text": "拆解 Follow Builders 的 YouTube 与 X 获取链路，并提取视频字幕和中文摘要",
+      "messages_sha256": "ae40dd472f35ae953d5382b68d67bd5ae8d43b73b9ca6c2d00de7dd2ced93938"
+    },
+    "019f5446-51eb-7763-be02-384e004127c7": {
+      "text": "安装 Follow Builders",
+      "messages_sha256": "902f10ce6fd7edeaf4d8a3966e5dca1e348b96d2539d082bf1bf9adb176a785e"
+    },
+    "019f544c-464d-78b0-98d0-3585f9d07ec1": {
+      "text": "运行 Follow Builders 获取当日资讯",
+      "messages_sha256": "91ca73446dfd0bd71a9bcfc7bef75df207b7e552389c6513461ae863b32b9545"
+    },
+    "019f547f-920e-7e12-aede-1c714b8d57e2": {
+      "text": "制定 AI 产品经理转型路线，并细化产品判断、场景拆解与评估能力的训练行动",
+      "messages_sha256": "bb989664dacc4bd7198c7133a75ae1cca6aca6bc75f31df8a0d39e2165aca2e0"
+    },
+    "019f54ba-2251-7612-9731-ac9d1741182e": {
+      "text": "分析投资博主内容并制定摘要规则，将信息获取方向转向市场一手来源",
+      "messages_sha256": "2c0d338df62456fca0aba0e84e102148b7ed37fe4be33e4bf4f70e53b75bdc0f"
+    },
+    "019f5537-65e7-7e12-bf3e-cc816bc0e0ac": {
+      "text": "设计 Follow Investors 的数据与摘要方案，并评估无中央数据库的 Agent 获取方式",
+      "messages_sha256": "24ce7ecbe65d7193f55cac71f224f9a5057add30067fc516ba0fb2f54247e20a"
+    },
+    "019f5622-db33-79b1-86a4-708c64e36ca8": {
+      "text": "清理重复与无用聊天内容以减少本地空间占用",
+      "messages_sha256": "928a208f637e5f459b6e03d828b109b009138b07d0052401a72c33c3b520dfaa"
+    },
+    "019f5733-5c1b-78e1-b6c7-136d5354340b": {
+      "text": "用 FABE 框架拆解 Codex 的卖点体系",
+      "messages_sha256": "8531eb5c8b63d0e6cf3b6ec217cb89348f518e48a67dbf3c31382e270c96a1f4"
+    },
+    "019f5b49-ee07-7ee1-8a90-42c8db2f4049": {
+      "text": "在 B 站关注参考图片中的时事博主",
+      "messages_sha256": "e5f8a4cb18e4cb9ba5f8763bb6c0a51abeca76995a15222bb48e1a1ad1438b10"
+    },
+    "019f5b4c-48d6-72b3-8416-aa9f25afbeb3": {
+      "text": "分析 Apple 与 Google 无障碍能力，并据此梳理 vivo 听障产品信息屋和规划思路",
+      "messages_sha256": "fcd9944fa6f8a30ada18a38fd0ad3b5a8341fb15965caef3877c68ed346023bd"
+    },
+    "019f5b4f-bd75-7b90-a23b-bc4b1ed81664": {
+      "text": "梳理 CLI 安装与访问令牌获取方法",
+      "messages_sha256": "c3ca10a4edd928906e0a54c465fb1c1d49503c8ad79c749ae179c541c2824f9b"
+    },
+    "019f5b5b-3711-7ca0-96ff-be52454fb92a": {
+      "text": "调整 GitHub 用户名与展示名称",
+      "messages_sha256": "ca9155af2935f765a758b49685977164e3d917ab7f809559c9feaf2530e893db"
+    },
+    "019f5b66-2d01-7ad2-977a-dabe5cceb146": {
+      "text": "将 Apple 与 Google 无障碍能力分析排版成两页 PPT",
+      "messages_sha256": "70c817dc3567d7c2d8daad0adef52fdf1989cfb9e885711538c7fa6e5514a22e"
+    },
+    "019f5b84-cca3-72b1-a285-f2ec0a3cc3e0": {
+      "text": "拆解 wolfcha 的产品流程、技术架构、AI 调用与本地运行方式",
+      "messages_sha256": "293d57e8d339407985afc0b9b7517cdcac0f6a233e892680158e9940df790f46"
+    },
+    "019f5c1e-9c7a-7973-bb6b-269d8afadd1b": {
+      "text": "确认唱唱鸟相关需求，具体内容待补充上下文",
+      "messages_sha256": "e696eccf0cac2fbb0617a7893b2cb558fbd42cc4e46adea40fc860a624547919"
+    },
+    "019f5e4d-74eb-71e3-b218-842505cd7bc4": {
+      "text": "排查网站无法打开的问题",
+      "messages_sha256": "ed2f8a5f5b6b7902393f67f5d33d291e1dafe8d31baa5ef7c695a313fc912cc2"
+    },
+    "019f5f12-ad76-7c61-9f51-6a39f6f5c98c": {
+      "text": "排查用户遇到的问题，具体对象待补充上下文",
+      "messages_sha256": "dd7c891df06694febc3ead1500325db2f9e0aa8aacf53f967734cf1384654e70"
+    },
+    "019f5f12-f70d-7932-9f87-8d9566ed37ea": {
+      "text": "打开剪映并整理已有视频目录",
+      "messages_sha256": "6f348d409e346aea45f38a9ea247defbee34f5f25cbf08ef66e32835b99d2320"
+    },
+    "019f5f1c-0208-7ba2-ab43-ad4ce063f06f": {
+      "text": "调研 AI 使用方式并梳理产品经理的实际应用场景",
+      "messages_sha256": "fa6c1b7e57b53f80ae92e1e49bd477f40392ae16870e5b275ad9e07a4ed2a66c"
+    },
+    "019f5f1d-122e-71a1-8341-42936303d17a": {
+      "text": "制定覆盖唱歌、听辨和乐理的练习计划，并寻找便于每日执行的工具",
+      "messages_sha256": "a2c8bc79c559935f6b8632729b331aabee9bb68e86866de00a52290ce0d28008"
+    },
+    "019f5f25-0917-7bb2-b5e8-ae1a07d5dc20": {
+      "text": "设计情侣故事插画项目，确定人物形象、故事拆分与创作运营分工",
+      "messages_sha256": "3d15560d8dea89b3d51e90410a097adee045803e415eba37b1fe6d5c011126fe"
+    },
+    "019f6093-8ea7-7b90-afef-0fe4ea929444": {
+      "text": "配置 Obsidian 工作环境，并评估使用智普 API 自动理解和归档内容的工具",
+      "messages_sha256": "d9194b5ac216c49d16059c004fe41dc66461f82843d74ed531b76403f5840b18"
+    },
+    "019f6436-9bd9-7082-9507-848d2497cd39": {
+      "text": "整理 Obsidian 文件目录，创建日记与复盘模板并导出 PDF",
+      "messages_sha256": "df6854d7ec8b78780ac966da5ceb81668c1b1e418aeccbeca10a925a0be660c0"
+    },
+    "019f644d-19b6-7283-a9cd-96029887d7c3": {
+      "text": "梳理转型 AI 产品经理所需的代表项目与作品方向",
+      "messages_sha256": "60b55387aec83f77b82c90844363153c603782d1715f3125fc5811eb4f69e5ca"
+    },
+    "019f65f4-f377-7581-bafe-f448ced7cc80": {
+      "text": "制作情侣分开与相聚状态对比的第二篇帖子，并调整标签后发布",
+      "messages_sha256": "8a938ba903a008d07a2aacc3dbf61d895e37351f19fd2f16a5c6051166d6fb06"
+    },
+    "019f6604-e55e-7cd0-9b3b-a6ade0320894": {
+      "text": "将历次住处整理为故事插画，并统一房间布置、画风与构图",
+      "messages_sha256": "d832faa4d942785ab966c5ce75e21a6a649cb15d7a8af5547b5511eceed81400"
+    },
+    "019f661f-b708-79b2-bf02-56620c6a24e2": {
+      "text": "将数据制作成支持筛选与详情查看的交互式浏览工具",
+      "messages_sha256": "506df2426b4fad11e1b2a2d8bdebe971ca02f0e43fdcf126a7801381381b6ab3"
+    },
+    "019f662b-a06c-7c02-9ccf-5625a137953a": {
+      "text": "了解 Codex 中 Agent 的创建方式及 Projects 与 Tasks 的区别",
+      "messages_sha256": "ced0f57ab4663b3f0c84fa9c0f91d6356c1e55dbd35ae2c8658e0e0e6f41d891"
+    },
+    "019f6661-bf59-7440-951e-2b0791967c2a": {
+      "text": "了解 Craftwork 网站的设计资源与使用定位",
+      "messages_sha256": "26621e1e20c7965d05abc0c15e4ae55bf5cdbaf857bfee5ca82005f06246be69"
+    },
+    "019f6b10-a825-79e3-b080-b53832396c58": {
+      "text": "分析市场下跌与基金持仓，设计可交互的每日市场观察和操作提示",
+      "messages_sha256": "09f881a70d936d8840f44a6248af66d86885c7ca83a3076092b58c02390f21d0"
+    },
+    "019f6b14-19e1-7382-a43a-a43e3ce5c20f": {
+      "text": "将郴州三日游制作成连环画帖子，调整人物、画风、文案与景点信息",
+      "messages_sha256": "705e3f187a261b0eb77f17fc3cdc72dd1213029f0c28c4ac40b987f5a0ac974d"
+    },
+    "019f6b28-8f37-7f40-8016-faf63215ea48": {
+      "text": "创作领导视角的职场讽刺插画，统一画风与文案并安排发布",
+      "messages_sha256": "c9c4655b14588a0f0cb63dd0427a2f8285c2cb32b422e49ad8ae8ae6339b3dda"
+    },
+    "019f6e6f-ad84-7f41-9440-9294b839c9c1": {
+      "text": "研究多角色协作方法，并深化 vivo 听障年度规划的证据与汇报呈现",
+      "messages_sha256": "8276a7e369481ee65db90f6bf6a0997cda4f548e1ab259b9a95d32541830d406"
+    },
+    "019f6e79-b45c-72f0-bfbb-a77eab59e0e4": {
+      "text": "围绕用户规模和满意度目标，组织研究、规划与批判性评审形成年度产品方案",
+      "messages_sha256": "0a3b4f974cbf22fe7ea20078cd571781662368a80e9648e3b74b3ea2268aa852"
+    },
+    "019f7d84-a856-7bb0-ac45-727d6adeb96c": {
+      "text": "拆分“我住过的每个家”故事底稿，检查叙事表现并找回郴州创作资料",
+      "messages_sha256": "dd01363438413cd634584597cd8f4d78457ddc693dcd524ddf9cba32637a0c84"
+    },
+    "019f7d8a-a042-7592-ab71-d1a66ad7d541": {
+      "text": "将内部调研与竞品研究纳入年度规划，完善覆盖听障产品全局的研究与落地方案",
+      "messages_sha256": "98e30724b31584fb8740cb826b526600a37006e82941e2d29041b036e416570a"
+    },
+    "019f7f55-e670-7781-b28d-6d958d9b0a0d": {
+      "text": "梳理职业目标、能力诉求与行动障碍，并形成精简的个人分析文档",
+      "messages_sha256": "ed61047d85121dda5bf95a0590c786066ba84665363405cebfbf226332e67ea0"
+    },
+    "019f7f9f-0f45-7490-916d-d18299045504": {
+      "text": "了解 Hook 的作用、Codex 配置方式与 Agent 规则写法",
+      "messages_sha256": "ec1eecbd42b7d6b6873847d8771f0339a266bf9a63e63e4e33ee6d316f78cfc3"
+    },
+    "019f7fa0-ac13-77c0-8408-70fdcd6b54cf": {
+      "text": "明确自定义家电声上线前用户测试的目标、易用性要求与验收标准",
+      "messages_sha256": "e2e39e445aad20a9d52d1b2ffd6e35355daadb176ee9ac4ff8c1d7e7b2378b5f"
+    },
+    "019f7fa3-a686-7f71-bf81-fa98fd289518": {
+      "text": "了解 Codex 模型选项变化与 Custom 配置含义",
+      "messages_sha256": "d6d1068af0d7456ba37bbce69d00715b56fdb387990e0aa5283b33a5a9b7f78a"
+    },
+    "019f7fcc-de6a-78e3-88fc-dd8f009e8822": {
+      "text": "围绕现有基金持仓建立每日市场分析，并以可累积的交互面板呈现",
+      "messages_sha256": "4794303eca0b820d6ac7bfe6e1090268b30b07060a29b52594bdfeaad041c4b1"
+    },
+    "019f82c2-4e70-7271-8dcd-4038db4b58be": {
+      "text": "为淘宝 20 至 200 个商品设计价格变动监测方案",
+      "messages_sha256": "3da311c4fb982c1cd993abc8115a4b81ecc3e05199b7337f2f8400c1bd5b4452"
+    },
+    "019f8316-d875-7640-909c-2a12bc079fbb": {
+      "text": "搭建 iPhone 远程控制 Mac YouTube 播放的工具，并排查连接与权限问题",
+      "messages_sha256": "cf6b84f7230a639b656afc37d6c7d8b54e088a5e6a51fbc13fd6aed7454ff244"
+    },
+    "019f8317-d693-7c63-8568-148716d7bd58": {
+      "text": "梳理 iPhone 控制 Mac 的系统功能",
+      "messages_sha256": "9e50718f226f583c6108c5946547aed7014f3f2c9cedcb53e7829e64c3e3667f"
+    },
+    "019f842f-9eb6-72e1-98ae-6ff0957d294c": {
+      "text": "开发家电声测试记录工具，支持三次或五次样本学习、失败重录与个人数据导出",
+      "messages_sha256": "471ad4a0b3f8f9c2486f270f559abb13f1e5d9afea03de02b9b88a94eafb8ccb"
+    },
+    "019f8a23-e4e8-7e82-8bd1-44126b56d069": {
+      "text": "梳理两台电脑之间同步 Codex 数据的方法",
+      "messages_sha256": "2df7d03df90983f601682dd120fb69e20ca171490a9ef5d85c53c6b89db17795"
+    },
+    "019f8a2f-7bf2-7ea3-bd4c-41957cb1fa13": {
+      "text": "了解 Codex 子 Agent 的使用方式与适合拆分的任务",
+      "messages_sha256": "18785fe5ef70c5914c83f58d36df2b74041237bee86dd583b510581054e47bc5"
+    },
+    "019f8a30-5451-7492-b163-9e06451ceb44": {
+      "text": "配置创意、文案、绘画和运营协作流程，并沉淀技能与人物一致性规则",
+      "messages_sha256": "4d202e2e731b3941e4e0e4140c18a20e0094a7961a572aaeed3863acb57bfe73"
+    },
+    "019f8a3b-7151-7333-a518-78125d17b57f": {
+      "text": "策划记录郴州三日游经历的第五篇帖子",
+      "messages_sha256": "db2df9539729f6546804eaddb32755f469609ce59a536a0adcdd63210aa1a56b"
+    },
+    "019f8a45-e04e-7483-869d-32e0db6f41b6": {
+      "text": "开发两点间多交通方式路线展示工具，并申请地图 API",
+      "messages_sha256": "28e806a2460dd80917377336c532a17923633c8db512abb0fff2b6878dc5c1c2"
+    },
+    "019f8a51-8b54-7060-bbe8-fda7340f91ec": {
+      "text": "评估地图 API 的申请、费用与免费替代方案，并寻找可复用开源项目",
+      "messages_sha256": "55b1e63c8023d2eacf5f67fabfec6e964975059bdbb09289879130df3269478f"
+    },
+    "019f8f01-2f49-72a0-be26-dcf8d857115a": {
+      "text": "制作人物正面与侧面的三维形象，并调整身材比例与活力穿搭",
+      "messages_sha256": "3525e613ca1436a05a34201d692ef49dd6b950908b016f82a9350bf5ce879cae"
+    },
+    "019f8f07-9a1d-70c3-ad78-8eaf301af701": {
+      "text": "建立情侣三维人物母版，统一五官与风格并扩展动作、服装和双人合照",
+      "messages_sha256": "6f5775005d652395660f7d1ad54e795812f5a3b9d5d1dcaa2c3f447bbdb76814"
+    },
+    "019f8f29-4d0f-7340-9cfa-8aa2b5dd76ff": {
+      "text": "梳理 AI 改变个体的具体方面，制作可编辑思维导图并形成面试表达",
+      "messages_sha256": "773c037b178fe2c06705cc3a64b208aa84ca91db128de9e28d8ad03e715acfb3"
+    },
+    "019f8f33-e336-76b1-b2f3-49979b3cc300": {
+      "text": "用思维导图梳理 AI 对个体的影响，并解释分类依据",
+      "messages_sha256": "5be09fdddf8b1547d3789bd83bac89e1efc9c3b3e92c946f98a6c2d182997b0b"
+    },
+    "019f8f41-9a0c-7a91-8774-704f507c3f2c": {
+      "text": "将照片转换为粘布风格，并探索在 iPhone 相册中快速调用的方式",
+      "messages_sha256": "61e8e74b69d5fa475255a1f1f2584436826e94e4562848143a2262fdcb874adb"
+    },
+    "019f9cb9-c8ef-7490-b676-d1272cb5ccc0": {
+      "text": "将真实摆摊经历改编为小红书图文故事，调整人物表现与文案后发布",
+      "messages_sha256": "54328627f373b95196e1ca58e21aadf92e609783a060dd17f242536ff97a5b71"
+    },
+    "019fa3ea-df13-7873-995c-68e33262189c": {
+      "text": "设计 iPhone 到 Mac Obsidian 的轻量记录同步，并按日记模板整理原始输入",
+      "messages_sha256": "db5b06120307b19064ca70fc2a7d8dd6e6d53f2db1c3717cee3ac905104b65de"
+    },
+    "019fa715-b930-7393-9702-045614714844": {
+      "text": "创建资深职业顾问 Agent",
+      "messages_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "019fa909-bf4e-73f0-ab38-d4e0886e5f60": {
+      "text": "建立 AI 任务总账，回填历史需求并重命名难以识别的任务文件",
+      "messages_sha256": "f424d2559651fbf0775e1341017924f3d5477393f6461f7f45822f9e5141c128"
+    },
+    "019fa91a-488b-7102-ac64-8966e203226e": {
+      "text": "将手机记录同步到 Obsidian 的工具制作过程整理为结构化文字帖",
+      "messages_sha256": "f45be9547a6b2df0a7af99a424312d00c00045d16f4e649cb2fc386a9659bf05"
+    },
+    "019fa91f-51d1-7f22-b6d4-95a383ba2364": {
+      "text": "将两周内 AI 使用方式的变化清洗为结构化分享文案",
+      "messages_sha256": "3ed992eb011bb114e8ec86d341425dd264a52258629fd12f60c758afa7b5e333"
+    },
+    "019fae74-1b88-7390-b3ff-9e54b010109c": {
+      "text": "拆解任务完成流程，并研究 AI 与人的能力边界和协作分工",
+      "messages_sha256": "a5facb1e3aeaa4158998b48f480dcf15b9d6e1c1bd68cab0bb0a86970eee4cd2"
+    },
+    "019fb0fa-4731-72a1-a533-7afab20439b7": {
+      "text": "了解 B 站跨次打开视频时恢复播放进度的实现方式",
+      "messages_sha256": "508413211ed1e354ccc8f9490ae9b990712f403c06e7628145e3818310cdd480"
+    },
+    "019fb0fb-5074-7060-9545-3f632f296bb0": {
+      "text": "围绕识别指标理解设置每日逻辑训练",
+      "messages_sha256": "9bceb66960a14446d854a09c7314d4974fb3be272b0083c23b8697ceddc185d3"
+    },
+    "019fb372-7ae9-7a50-a31f-c5288d7f8414": {
+      "text": "开发轻量玻璃风 Mac 待办工具，并调整桌面入口与界面细节",
+      "messages_sha256": "5a5eb5879c1057b1e33e9d2380c3332c0e29e2490fe085bd3221df052238131b"
+    },
+    "019fc7ef-cdf3-75f2-8d10-2a40200872f1": {
+      "text": "设计将纸质机票、票据与医疗单据数字化收藏的电子票夹",
+      "messages_sha256": "fbc8bb0ffef6141c7bef25fec20f8f688fb7913009aac9128c6b2e7a0b96eedf"
+    },
+    "019fccc4-ff3b-75b2-a56b-7b32970d4593": {
+      "text": "将纸质登机牌重绘为保留原始信息与轮廓的无背景电子票据",
+      "messages_sha256": "9e93f34f4d7b49a75fe35b9726752759758b39b8c4543b1323bb85e8552d11e0"
+    },
+    "019fd750-3796-7fd1-bdf5-442c080a9205": {
+      "text": "根据视频内容绘制 Vision Pro 的形成过程",
+      "messages_sha256": "ac704167a7910abb2cb5e56116107bf39c4eb102a3f6fc0b91d83fd5dba831ef"
+    },
+    "019ff0f9-dbad-7d02-8bed-117935c465ee": {
+      "text": "学习用户提供的提示词",
+      "messages_sha256": "d13659fefea1153aab9dd6b4d27e9fb770c4d581b2e07194200719ed0fdba1f7"
+    },
+    "019ff12b-2dd7-7533-b3cf-bb08f45e519a": {
+      "text": "为待会办工具撰写面向小红书反馈收集的介绍视频逐字稿",
+      "messages_sha256": "048923181e9aa1fd87c298f09d11fb35a56c85d315f614f03838a8a0a9f5aecd"
+    },
+    "019ff146-e6c4-7a71-a318-a4b5028b8fc6": {
+      "text": "制作有趣的一分钟计时动画，并通过重绘与补充关键帧改善过渡",
+      "messages_sha256": "3b611c62d7885ab71076a10804e17d954b396fa0e88d621cf757253510119d35"
+    },
+    "019ffb30-2bb7-7ba3-9a65-3d403489452f": {
+      "text": "评估音频理解能力，并设计面向听障用户的环境事件监听与提醒工具",
+      "messages_sha256": "4f5d664afc5dfee58bec19c4fe9a22e8c11f2c6e3417acc28e07380b33e20359"
+    },
+    "019ffb41-3221-7472-9ff5-ad36aa8822ac": {
+      "text": "分析参考产品的用户价值与技术链路",
+      "messages_sha256": "9fad129f37bd050b5168a10905027b646d084ab6f86864bf43d259f2186caae3"
+    },
+    "019ffb57-b19d-7a73-8cee-b2537f252599": {
+      "text": "为待会办增加桌面动效，并统一气泡与文本框的形状、对齐和色彩",
+      "messages_sha256": "8000fb0647261952812df2dfc88bf2da4966fcc8ed76e8ad0a4fde19c0521100"
+    },
+    "019ffb7f-eccf-7f01-ac56-379608798540": {
+      "text": "分析报销反复出错与工作沟通中的困扰，寻找减少疏漏的办法",
+      "messages_sha256": "41bdd6aa3ec9f6e0b9c9433ca95f71233397d0b943de538936f8e4807241fc40"
+    },
+    "019ffb9b-3454-7f43-b036-6c92868faa8f": {
+      "text": "制作 Mac 桌面置顶的花卉生长动画，探索百合与向日葵效果",
+      "messages_sha256": "afa53d17d22ae0fc64dcf5bfa255391f826e03d9ce052a165636a9fa9c449eda"
+    },
+    "019ffbb4-1f6e-7b03-8bb2-2cc14eef511c": {
+      "text": "找回此前制作的百合花动画项目",
+      "messages_sha256": "cb0a87fa4c52e92c7ced311e5e985292b8d2b2cefd1af09f3d5919c071c92c7d"
+    },
+    "01a01a15-b336-7e32-aff6-1ada63adfaee": {
+      "text": "探索 Apple Watch 重力与流体动效，并评估降低体验门槛的实现方式",
+      "messages_sha256": "00fc57d595036dd8bd684f897e08621ba332046349e7607b69c4052c33ccf804"
+    },
+    "01a01a9b-6d82-71b0-9b4b-42fd064b2562": {
+      "text": "评估能清晰发声的语音绘画技术，并制作可体验的 Demo",
+      "messages_sha256": "d9c9066f31803b34f69179d89f463279aff26da3a5b5a3eae40fc2e0e5e3baae"
+    },
+    "01a01d5e-fefd-7400-bccf-17d31bb09ceb": {
+      "text": "将 DeepSeek 能力接入 Codex，并探索可从加号菜单调用的插件入口",
+      "messages_sha256": "299ada29ea6930de23959dc9cf48d816c0e6f654f34aafd45733cebd3e973d29"
+    },
+    "01a01d68-23f8-76f1-851e-c6554fd0b7df": {
+      "text": "开发可在 Codex 调用 dot3-note 模型的插件，并处理输入问题",
+      "messages_sha256": "152d4955fe83d50199fdc3b0b92222f5e9669b135c50fed624ce83ef51913e44"
+    },
+    "01a01d9a-599a-7420-baaf-a79cab0956f7": {
+      "text": "明确 DeepSeek 插件的调用方式与 Codex 菜单入口",
+      "messages_sha256": "c52830ee54e03f48d2632acd63dfacecd715903822124c3e8441559002ff4a98"
+    },
+    "01a01d9f-3ef4-7c41-9a6a-ae34c3106759": {
+      "text": "分析 DeepSeek Harness 的设计理念",
+      "messages_sha256": "0408440b32a69081698f154ed72a02182c26df2b60d57dc4184d185755e471df"
+    },
+    "01a01e59-da87-7030-a092-c0082d012d97": {
+      "text": "开发本地视频中英字幕工具，接入 ASR、时间戳、字幕编辑与导出并优化界面",
+      "messages_sha256": "6df936c33510180c5dc927160fdf5b91024b15926af70635df7f588743043e4f"
+    },
+    "01a01ea4-035e-7471-bb69-251eef9e8c3f": {
+      "text": "了解从本地项目打开 ChatGPT 时文件是否上传云端",
+      "messages_sha256": "22ae6d8266240895d06422bda8080b72904f422140e1453759f0dabf77c0604e"
+    },
+    "01a01ed5-28e9-7313-be14-114301733807": {
+      "text": "开发 X 视频字幕网页，并排查加载反馈、播放与本地处理链路问题",
+      "messages_sha256": "361bb68e193ea0d92e237b2bd3f4f6c7a50f9868bf711151617d17b46e6e83d6"
+    },
+    "01a01ed9-34e9-7173-a63f-21b1b62d05a7": {
+      "text": "评估 DeepSeek Harness 的运行方式与本机资源要求",
+      "messages_sha256": "5c336410abf748f1eb1547de4bb2eaebdb737b090100d738988e7200f5d6326b"
+    },
+    "01a01f27-8044-7791-a2f5-a2b24f714b3d": {
+      "text": "安装 web-design-guidelines Skill",
+      "messages_sha256": "9598584ded56d169ae60b4272bd4f9b255b1ade3e9b5933497be17eed15d3392"
+    },
+    "01a01f33-100d-7da0-b104-620e5a280421": {
+      "text": "搭建个人实验室网站，明确首页、Idea、产品等模块并调整形象与视觉风格",
+      "messages_sha256": "bdeed221665137a550ec40785fab5c5cad5dc7c1e4f69b0ce423fa0948701f01"
+    },
+    "01a01f3d-b34d-7652-9ace-632ebc6214c9": {
+      "text": "修复字幕文本过早省略的问题，并调整卡片高度、居中与间距",
+      "messages_sha256": "13ac7317ef666d012b4fd6923ef772d5a4de53a00faff2949963cf4e1bdd91e4"
+    },
+    "01a01f56-46cf-7060-99db-540e7ccdb55f": {
+      "text": "将视频字幕项目整理后推送 GitHub，便于他人在本机使用",
+      "messages_sha256": "52319f6c1708087ecce46358047e5e96aeb8f6c12ed623b4a858ead99b2ad09b"
+    },
+    "01a01f6c-6b75-7fd0-8c52-02dc42bc88e2": {
+      "text": "优化个人网站的首页身份信息、人物视觉、选中状态与整体留白",
+      "messages_sha256": "19d6148210b86a0d71477caf8700f7ffc91d862ec114d8fea79e77a65e1c09d1"
+    },
+    "01a01f6e-96b9-71b2-8a6b-3081146e7741": {
+      "text": "为个人网站 Product 模块添加统一的产品介绍卡片",
+      "messages_sha256": "ab1b30474abe8acf55382e606cb54132fae4d512cdc1c090362d4ed5b0a739ac"
+    },
+    "01a01f72-e77b-7261-b9cc-422c57700c2d": {
+      "text": "为个人网站设计年轻有活力的人物与动物动画，并统一形象和动作表现",
+      "messages_sha256": "ff302b6e86161150f475983db5f6a5d95bf2dddb17201fd6120aef235aab86e4"
+    },
+    "01a01f74-b4f5-7543-8519-45f22b79b51a": {
+      "text": "解释个人网站中标注的文案含义",
+      "messages_sha256": "439988ad6505e4adaad80778f471d303935bc5c55d896863b7ee47582e356b56"
+    },
+    "01a01f85-d0e4-7cc2-bedc-a9eaaac5cee5": {
+      "text": "在个人网站 Idea 模块加入电子票夹构想、封面与介绍",
+      "messages_sha256": "614f5c4526e0e0af0c7e753095d1a29fd662ae028e83ccb124a78e4eae08ebec"
+    },
+    "01a01f94-2a82-73f0-83bd-c03b1823a292": {
+      "text": "在个人网站 Idea 模块加入可选点和生成路线的旅行规划构想",
+      "messages_sha256": "5fe2dda56db82349855d2898c507b09f17fa4421918ce7d720055e896ef22d29"
+    },
+    "01a01fab-e9d7-79b1-8c47-97d7ba218cef": {
+      "text": "优化个人网站的卡片动效、选中反馈与模块一致性",
+      "messages_sha256": "e2ae26526c053431207f339b986af36586cedfdee519618fad4891b201cc5385"
+    },
+    "01a01fad-f85e-7be2-a1f6-333c1c502b95": {
+      "text": "为待会办产品重绘完整使用流程 GIF，完善鼠标、桌面背景与交互细节",
+      "messages_sha256": "7983f18cf86a980bad6d79ca6d0815a6eb85b4646a044a02f43553b9c5cffdac"
+    },
+    "01a01fb0-4786-72e3-bab1-fdd0bbff52c7": {
+      "text": "访问本地视频字幕页面",
+      "messages_sha256": "8e4de75759d58e4a112e7886df0a701d01839edc0b62d2b6f1b018b72eb3dcaf"
+    },
+    "01a01fc9-2783-74c2-b9ec-0a8b041d71d8": {
+      "text": "查找 oil-oil GitHub 中可借鉴的个人网站项目",
+      "messages_sha256": "c5201a2a1586202b7e53efd5862e08a472f1e86dbc6e8ae9970d515fff3e9353"
+    },
+    "01a02f27-48a4-7273-b879-9efe59edfff6": {
+      "text": "梳理中国公民免签目的地，并比较广州与深圳出发的假期机票",
+      "messages_sha256": "1ce8489fc2084ac16353c784e7d63928000fcc6849f0ecb86701fd707a387033"
+    },
+    "01a02f3a-6d76-7432-a8d6-17d46344f08c": {
+      "text": "比较中秋国庆候选目的地的机票与高铁成本，辅助安排双人行程",
+      "messages_sha256": "4fa18f2483b1f38c5204ff773bb2b5a5853e0ac36d6a8b9d9adfa12d74948fd1"
+    },
+    "01a02f44-ad49-7322-8320-3787f4ba5070": {
+      "text": "寻找并安装国内机票价格监测工具，跟踪指定航线价格变化",
+      "messages_sha256": "3d0a15d3fcaff18922edf034d860e5e7ec2ec21193c6a4cb4a492dcf3c9b2977"
+    },
+    "01a031fd-55d4-74f0-8f17-1a130e53ae65": {
+      "text": "为个人网站复刻运动动画，扩展攀岩、游泳与飞盘场景以表达个人特质",
+      "messages_sha256": "fa714be47ba09350e32f18925159fd410350ef2750efd3ece7c45d2998b1de7b"
+    },
+    "01a0322f-94ad-7423-8b69-f38d7a7a645b": {
+      "text": "构建机票与高铁价格监控，辅助确定中秋旅行目的地与购票方案",
+      "messages_sha256": "923be14d80b3713b33fe1a075dd7c1883a888aea2a60e22fe609b541f82db927"
+    },
+    "01a03249-5386-7313-ade3-b935414cbd10": {
+      "text": "设计能表达思考者与行动者特质的个人网站图像",
+      "messages_sha256": "5b325d3a9f3162b87e7cb6ea83fbf7f23e26a23c17d86fa0ea04edc7beb5f47f"
+    },
+    "01a041b3-d611-77f1-a384-6fe616e89ae8": {
+      "text": "安装 ELI5 Skill，并用它深入解释手机蓝牙",
+      "messages_sha256": "0ecaca66418e9b390e2849b568c7a34f89ed942fcb666426566e04eb78edcb47"
+    },
+    "01a05b60-583b-73b0-a9e4-995e803f7e75": {
+      "text": "获取并查看新疆旅行现状帖子",
+      "messages_sha256": "d2cea48b31bf8001486dccd0835f6324ebff3b94d532a011e8b5a931cc67dc5d"
+    },
+    "01a05b6c-4486-7382-8ad1-41f10faf790f": {
+      "text": "评估旅行团行程安排、潜在风险与 5499 元报价的合理性",
+      "messages_sha256": "4c0817fcea3ca2669af670392668f6d659f94ca9e40ac147c1f39052c86dbbf5"
+    },
+    "01a061dd-05bf-7a32-bbb6-4e0538ae3f41": {
+      "text": "计算不同工作日和请假天数的薪资损失，并制作可切换参数的对比图",
+      "messages_sha256": "7a11dba56e1dabc9c4ff0da1c4e3fb284d77e94f31a9df91a5118aed0626b2de"
+    },
+    "01a06253-feed-7dd2-8be0-eb23a5c8766d": {
+      "text": "开发可视化内容收藏画板，支持多平台链接预览、删除、平移与缩放",
+      "messages_sha256": "e94c56a31635d9fe8e09d5c6f095f9f23369da9f250a0298fe30c552550c061a"
+    },
+    "01a06265-2fb5-7011-9c23-5363df9eba20": {
+      "text": "分析 ChatGPT 语音输入等待转写的原因，并比较流式上屏体验",
+      "messages_sha256": "941dae3917ea17fbd00010e7b58510a42337d23c345801ae49d13c3e16d01fcd"
+    },
+    "01a062b6-916a-7f51-bc0b-5ad3e74dd8db": {
+      "text": "结合请假成本与秋季景观重新筛选国庆旅行目的地",
+      "messages_sha256": "560d806596ddb8242d333a71e2723c32b9f05a2ce27cdfe56766eac7d2ed080d"
+    },
+    "01a067ba-711a-7551-826c-96c5de083492": {
+      "text": "为突出可视化浏览与回找优势的内容收藏工具命名",
+      "messages_sha256": "a5f7146fd73fbaa933d60099e2a84c1727313ab1c595cfae52278e7670ecd114"
+    },
+    "01a067c6-9ce0-7e63-9b34-99f0ad9a51c8": {
+      "text": "了解 ChatGPT Section 的使用方式",
+      "messages_sha256": "1ab6547abf15526cd81c2c402db92d6e33d4a568b49a483b4d545f96fc2c8ecd"
+    },
+    "01a0768b-4139-7e70-a606-02056a6d3cd5": {
+      "text": "排查 GPT-6 无法使用的问题",
+      "messages_sha256": "024a45ef2806b178d50628089454450073ec4272ef79cdafdcbe696ccc64d502"
+    },
+    "01a07a4f-9003-7593-95e2-a8fd1262bf7d": {
+      "text": "将云贵旅行视频与评论整理为图文旅行手册",
+      "messages_sha256": "31a68ddaa68b719a3926c81c23d0149c0d6640534cfff6d52124d70f35b27e34"
+    },
+    "01a07a77-3c77-7762-8bf0-8559c01f242a": {
+      "text": "将旅行资料压缩为报纸式高密度单页，并讨论作品选择",
+      "messages_sha256": "2ced5fb4f185657758acfe2704a4feeecbbf3f5034898af4f2ef00293e5ecfd5"
+    },
+    "01a07b9b-5c95-70c2-b56b-a52f55856ccb": {
+      "text": "梳理地图册产品需求，补充地方文化信息并调研相似产品",
+      "messages_sha256": "bc58f5f609ea0be50c2da9e13d434587f3cdde29808b924d31546d7f098eede7"
+    },
+    "01a07bd0-f29e-71e0-b95b-96375f6c2fb5": {
+      "text": "将旅行视频转为交互网页，在弥勒地图上按真实位置展示特色地点",
+      "messages_sha256": "3907f849b1a103901d09b5628165d835d29f8ebb6c340b069a071c5479c6572f"
+    },
+    "01a07bdd-4514-7810-bed8-ba06f997253c": {
+      "text": "将地理文章与参考内容改编为网页动画或交互图文",
+      "messages_sha256": "22e0193325e415b2f70b537a11e6f8183dc7d1f11d2d2febd92ac540f90350c7"
+    },
+    "01a07c01-b49e-7bc0-b653-234adf27a8ab": {
+      "text": "制作中国地图平面爆炸效果，并排查页面无法渲染的问题",
+      "messages_sha256": "26f12bb7a9811d4f30bc7ed49264037f3c419756df5e50222410b586c69c6243"
+    },
+    "01a07c05-eaef-74d0-beb0-9f8f452dd3b9": {
+      "text": "制作 Rickroll 原版与重制版的并排对比视频",
+      "messages_sha256": "b69ffa065c90b7c4033a5ef823d1d147ab8ed4b0b7711c1f1306f5efb9e31d91"
+    },
+    "01a07c09-0103-7173-be41-d22bb909a2d4": {
+      "text": "了解“鹈鹕骑车”测试的含义",
+      "messages_sha256": "3a5607840a2c1f88c2f34f403e5791105bcd95adf29fece8835c1a10a06da648"
+    },
+    "01a07c0c-63c6-7ad0-ad95-bb327a3e0e6d": {
+      "text": "在 Figma 中探索向日葵与真实眼睛的绘制",
+      "messages_sha256": "66bd8b958efaaeeb76d24e87ea489f1ebc38a537d3ecfcd07be2f282f394d4c6"
+    },
+    "01a07c2a-4b5b-74a0-a29b-879e9d335c40": {
+      "text": "探索微信连接能力并向指定联系人询问下班时间",
+      "messages_sha256": "7e9546960e442a55f04bf8da5a89d353065233e2ae549336e2429acc9097a531"
+    },
+    "01a07c2b-8d68-74d0-87aa-c959f69a625b": {
+      "text": "使用 Canva 绘制真实眼睛，并核对交付文件与原创绘制方式",
+      "messages_sha256": "876884a5d12e47e3091f0e07ef0ce33d6892578662d2474ca9c9de72f8648cb6"
+    },
+    "01a07c4d-527a-7841-bf6c-58d14d5bd432": {
+      "text": "研究中国各地区入秋状态的可视化与预测数据来源",
+      "messages_sha256": "cfadfa96256520d45e9a83a9bf9abdda379e7382f0c758220345bdc2abaf3c02"
+    },
+    "01a07c58-ae59-7783-a57c-1eda9eeb4859": {
+      "text": "制作可按全年日期切换的中国各地区四季状态模拟",
+      "messages_sha256": "e783b774943c2ddc412a5e2ed6edf2bff255a1d230c6d4706eb7337182adcd10"
+    },
+    "01a08b71-b22c-7d43-8f9c-2be18df4eff3": {
+      "text": "查询 Plus 会员状态与到期时间",
+      "messages_sha256": "a0899dc376cce0309dd2498a22e0ca3da8d7d08a35063455c72aff5753f8593b"
+    },
+    "01a08b74-7b2c-7f71-bf02-1da6d75199d8": {
+      "text": "将小球追踪动画放入首页 Hero，并统一内容宽度和模块排版",
+      "messages_sha256": "79c43766f56cb5f6895896bc69288b865e180826daac4d4639891e2fe1bd6cc7"
+    },
+    "01a08bb0-5b32-7643-af39-7cd14b25ed54": {
+      "text": "复刻参考定格动画并输出 GIF",
+      "messages_sha256": "3b795c71715a64a2af7d6617ddbe1fdea6da5eeebd1b3362b4cc8b43e15ab1d9"
+    },
+    "01a0afad-0517-7141-8d0e-6d600a26ecfc": {
+      "text": "对比大陆与香港 Apple Watch Ultra 参数，并排版成突出差异的分享内容",
+      "messages_sha256": "c8604ae2978623264ac5973a99ee25cd057390eeadbeacfca9c50436dc0c1615"
+    },
+    "01a0afb5-76e0-7621-a0ed-d214da939405": {
+      "text": "获取 vivo 开发者大会视频字幕，并寻找闭源视频的字幕提取方法",
+      "messages_sha256": "6f4e5bcdae0006777c219e6e6e5acb023dea306977a73c6d82fdf171fa828a07"
+    },
+    "01a0afbd-5b5a-7733-9937-533f1a73366f": {
+      "text": "整理麦理浩径交通、下撤、露营、补给与准备事项为徒步攻略",
+      "messages_sha256": "d18f615bf42b01ea5a93353144a18e03acf0fea5942267da4a2e9d7884d4da0b"
+    },
+    "01a0afea-f445-78e3-b7ed-6546a430f1cf": {
+      "text": "寻找并安装用于解释知识概念的 Skill",
+      "messages_sha256": "7fba12bdd8cf647b8f880f8acd16b4bc774611d85ae8b7c2b08299209a9986bf"
+    },
+    "01a0afee-e656-7bd0-be9a-a56c9bf19822": {
+      "text": "调研 OPPO 心力豆的实现方式，并用一至三张图文拆解",
+      "messages_sha256": "66e67764127b3bd02135212003b0c89090ea91695292352d79a0a1d575ff9473"
+    },
+    "01a0afc6-56ac-7b90-aa71-5003425c25f0": {
+      "text": "优化大陆与香港 Apple Watch 对比内容的价格换算、功能解释与黑白灰版式",
+      "messages_sha256": "c4214b85c872d08726cf7635ca357d3b9057985436b0797c5c103a89a85d080d"
+    },
+    "01a0affe-74d6-71c2-987b-0203af463186": {
+      "text": "安装用户指定的 Skill，具体名称待补充上下文",
+      "messages_sha256": "e7d675d0c15fe7d053f9c2a528308fdc4256188c7e31eb5ef3ecb47433b0e56b"
+    },
+    "01a0baa1-1e37-72e0-902d-5f25deb489b9": {
+      "text": "找回此前手表版本对比任务输出的图片",
+      "messages_sha256": "8c330cb57e372d071155361dbd0777a5c57f535218a464ebd0bbfd80720e6adf"
+    },
+    "zcode:sess_5882251f-3fae-47f4-835d-ee1ccd7f7d27": {
+      "text": "开发文字到 PPT 的网页排版工具，并明确分页、版式和手动触发排版的流程",
+      "messages_sha256": "91b00e45ff13fea6a19bcb696faafe1e1b5f2ba64be5b54b9eda699455611be7"
+    },
+    "zcode:sess_b42109f7-94a3-4bd6-abb7-6363991d9d41": {
+      "text": "根据整页内容判断标题与版式，完善文本到 PPT 的排版流程",
+      "messages_sha256": "1dd8be7c0e64310399cd63f36174864ff67c4da99fd2c1a4009c63fc4e5d4439"
+    },
+    "zcode:sess_71cb75dd-5aaf-4b3c-9d61-bcc0812ef294": {
+      "text": "解释账号提示并查询会员状态",
+      "messages_sha256": "2e81bee5f69d29e3a52140252f972c69a20d8bc885832939e3c4f09c80d9994c"
+    },
+    "zcode:sess_e5576ce0-4e46-4cc4-aaac-f7244993b207": {
+      "text": "排查个人额度仍满但无法使用服务的问题",
+      "messages_sha256": "0a73ce82ded5fc66d81db163460c4c304cef7def92dc895b8f56a9e1847d7521"
+    },
+    "zcode:sess_129ebe53-f751-4c84-aafc-6a799304c4c9": {
+      "text": "安装配置 Follow Builders，补齐缺失日期的资讯并设置默认头像",
+      "messages_sha256": "77523a14ef1b0c7633144a2cf8d6b491d2a6f237c04d688777fc74d5c2617dd3"
+    },
+    "zcode:sess_36435b39-0113-4d74-813e-8c5b47a32fc9": {
+      "text": "分析参考博主的封面风格，并沉淀为“北也封面”Skill",
+      "messages_sha256": "329e49a4c19d5109f8e20c03b279b1f724dfd3f859294bab20eb97d1efc96331"
+    },
+    "zcode:sess_2015f23b-7314-47ae-a4e9-fcea0904927a": {
+      "text": "调研 Apple 与 Google 年度发布会中的无障碍更新及产品布局",
+      "messages_sha256": "0c2e451d45edb34e793e2e9e7ed0106777daf1c800dbd44d444f708885e57dc3"
+    },
+    "zcode:sess_dd752209-f88c-4bf4-9dc9-e65418c98f7f": {
+      "text": "梳理多种 PPT 版式的选择与内容制作方式",
+      "messages_sha256": "95f1dc5b76399a7e913189ad8ed4c7461eac5008cdb998a528b427ea185ccaf2"
+    },
+    "zcode:sess_79411aaa-3473-4ed1-9484-373e4253c523": {
+      "text": "研究 PPT 制作 Skill，并沉淀文本到 PPTX 的自动排版规则",
+      "messages_sha256": "e9f81e91b3c10466cfef7f82d5d3cf8334f4e9c59905910248f9d5bf8b67f9be"
+    },
+    "zcode:sess_bc14f5c4-3d42-46de-8ae6-ae238f153ebe": {
+      "text": "了解用户提到的 JEV 概念",
+      "messages_sha256": "4d1976f26ad71a5d8ed1c7cf4eb53281b0624eb80f52734a7c7fd701941b0edc"
+    },
+    "zcode:sess_35a3b997-60e0-4b07-8c7a-863d8dc6d887": {
+      "text": "规划贵州国庆旅行，明确关注点、住宿与交通并可视化呈现攻略",
+      "messages_sha256": "1475b966a80f2b40a31aae36619acc531089511d774e0d8988a926114c02facc"
+    },
+    "zcode:sess_de09f8f9-6b9d-4136-a711-50eae9e0c49f": {
+      "text": "开发基于真实 POI 的旅行地图，优化位置标注与按天路线规划交互",
+      "messages_sha256": "298fd1433ce87cd57197598e67133edaf0e4007b0dd49fc85b9e1b5b28b06215"
+    },
+    "zcode:sess_e486a58d-b36e-4ee6-ae4c-0c7780f68a41": {
+      "text": "汇总跨平台历史任务和子任务原文，分类展示并配置每日统一刷新",
+      "messages_sha256": "fb4342b8e5d12721d88f9c4baa844b29cbf63939e7b53048726ae6e6b595efcc"
+    },
+    "zcode:sess_637bc60b-a454-4f1c-8237-c4f90b89392d": {
+      "text": "配置 Figma MCP 连接",
+      "messages_sha256": "ff7190527b72c857a533500d1cbe2febfcfd6eb1476ffe83f84ec574ae6ffd92"
+    },
+    "zcode:sess_4929bf13-e262-4734-9298-a20701b836ae": {
+      "text": "申请高德地图 API Key",
+      "messages_sha256": "57d1c1ac19a2c8a0d1a3d36d8f1a0cf87b92faf31eb8d48bf6d8be6b625630fc"
+    },
+    "zcode:sess_d1e8be7a-d709-433f-835c-c5fe88738ec9": {
+      "text": "拆解豆包 App 的产品能力与实现方式",
+      "messages_sha256": "60d3f125cff3df6cdc9160f9e363f45be0c3cf3111e7c99d40ff3e47bcfa130d"
+    },
+    "zcode:sess_4a4f5185-43c2-4522-8177-b1b6754955d3": {
+      "text": "将 AI 适用任务的判断框架排版成一页 PPT",
+      "messages_sha256": "9744c369129486630d7c97161862d7704b5d16ed887010176607e45fd0fcca2b"
+    },
+    "01a0f0bf-2eec-7ae1-a88e-c6c5b8df5e70": {
+      "text": "统一小红书封面的人物、标题与观点配图风格",
+      "messages_sha256": "5d7e1c7e110540846256752c3c64bb8226abcd59d6d6da475fa27df95a04f7ad"
+    },
+    "01a0f0c2-d1ab-7cf2-80ec-a13426207f8e": {
+      "text": "调整对话命名方式，避免直接使用第一句话导致难以查找",
+      "messages_sha256": "1f13769e238b72b7bbb6e120b8bdcfb812bb3c9d52450dc8ff5800ed805fac2f"
+    },
+    "chatgpt:ai-pm-job-scan-20261001": {
+      "text": "每周扫描匹配的 AI 产品经理岗位，并整理要求、匹配点与优先级",
+      "messages_sha256": "fa778c79329cf3356f610b4bf531e4c2316f47cb6063ffeeb3e9f869bb9994d1"
+    },
+    "chatgpt:ai-pm-resume-20261001": {
+      "text": "重写面向 AI 产品经理的 A4 简历，突出 vivo 无障碍规划与迭代经历",
+      "messages_sha256": "9e35f34545ba8eccf40b4f39f5528eab45468288e5720461b7f9c8680e444600"
+    },
+    "zcode:sess_dbfe55a4-b78c-450d-9653-2615cc827962": {
+      "text": "查找教师资格官方查询入口并下载个人查询结果",
+      "messages_sha256": "ade0f2ec683ab7bc8637726e5b8804e9a3786a5359aac7fcff691ba0ab868a03"
+    },
+    "zcode:sess_634bccba-9fac-48f9-8162-8a905d42f0f6": {
+      "text": "配置 Figma MCP",
+      "messages_sha256": "fe47a9954d0be0bdca3446ca61bee4603ccd0e8adf22bc79f6252108835151ac"
+    },
+    "zcode:sess_27bb1ff2-edf6-4b13-8197-6f7074ea5f47": {
+      "text": "将 Figma 中的 A4 AI 产品经理简历导出 PDF",
+      "messages_sha256": "de4d1367a6251f29961c710c5bfa19709c239c3a32b159b19dd6c210c5f3e4be"
+    },
+    "zcode:sess_c639671e-5523-4b3e-910b-8ac976ddf002": {
+      "text": "排查 AI Builders Digest 自动更新中断，并检查模型调用与付费配置",
+      "messages_sha256": "cd4a28689bda3bfea4c6c061303f4ee9b87a875bbf8aaa6ebe2d345ff855bb7e"
+    },
+    "zcode:sess_b0e359a5-8b35-43ea-98c3-04854a5322c8": {
+      "text": "围绕 AI 手语陪练经历修改 Figma 简历，并排查写入权限",
+      "messages_sha256": "28c35b6a598dc755c98f197b01395d190e8bf4e75ce2f4389f7f9fa7966f7751"
+    },
+    "zcode:sess_ee1083e8-1888-42b5-b49f-28c7a272a55a": {
+      "text": "打开个人网站",
+      "messages_sha256": "ed6bfd32080c2bc0401efa08544e76af0a6a88c82e1869b87fe9474c077b5e2f"
+    },
+    "zcode:sess_af3fff40-75f7-4fec-af9e-2afc574442a7": {
+      "text": "打开视频字幕工具",
+      "messages_sha256": "28d483fc08a2f263d93f36fcc99d8b84b98fb680cfa554e0ac380765ba8f7a22"
+    },
+    "zcode:sess_894e25b3-1854-4e66-ac8c-8d9d77a4720b": {
+      "text": "参考 oiloil 搭建 Tsing 个人网站，调整模块结构、彩色点缀与首页文案",
+      "messages_sha256": "75955ac0968f98affb503d0a1664d9d64f45c670c1cfeb44e0336bf378152333"
+    },
+    "zcode:sess_fc88e275-a965-45e0-ad3f-0b2a4a07d840": {
+      "text": "为个人网站重绘简约耐看的全身人物 SVG 形象",
+      "messages_sha256": "a71cea7398eba6a6aa4fa8d3d899d8f87c74845d8339fa8b6dbcf547a8775469"
+    },
+    "zcode:sess_e3610172-e05f-4ef4-a9d8-ef4218f68e66": {
+      "text": "调整 AI 资讯站的分时刷新与打开时同步策略，并修复内容丢失问题",
+      "messages_sha256": "5e3f1ec80626c768c0cc3a275059924e9ba4a024a5e94c1fcd8c4e8810127f14"
+    },
+    "zcode:sess_582bd3ed-cc08-41b0-8653-1da16a6494c1": {
+      "text": "为 AI 资讯站增加右侧原文预览，并调整上线地址名称",
+      "messages_sha256": "03d037cb63724dc99b4e23f075fbe6f4c7290e886da008ce7f29f1959d338439"
+    },
+    "zcode:sess_8c9828e7-c678-4d9f-a65f-03c74a3fb062": {
+      "text": "设计理解个人表达风格与经历的 AI 语音助手，用于代为沟通和布置任务",
+      "messages_sha256": "2f1dc29de3bc0e4b0344f453eba214d850b49a8e96b1009b1ab4b310bfab50c8"
+    },
+    "zcode:sess_5a24251e-fce2-4f97-9cfe-a283628fb804": {
+      "text": "将《徐霞客游记》制作成手绘本，并精简影响观看的小字解释",
+      "messages_sha256": "9d6334be2a2884fef1e3326fa868d0743723ca3711581033c1f1d3dd4bdb1a86"
+    },
+    "zcode:sess_ef9949aa-170e-427e-8f44-becea3f91814": {
+      "text": "整理记录相关请求，具体意图待补充上下文",
+      "messages_sha256": "f7b811f1a56aa18d34c4d1a45443f4a75b4fdab2994069f70ed4f12852679e22"
+    },
+    "01a12067-6d7f-7233-a7e8-b06bfc5c742b": {
+      "text": "规划手工创作 App 的包型、尺寸与材质选择流程，并梳理素材和生成架构",
+      "messages_sha256": "4a2010af63de3783eedc78fc8c604892e85f81439205cf022b7b3394cf6db590"
+    },
+    "01a12084-df7d-7282-a465-a21c286942e7": {
+      "text": "为个人网站调整全身人物的穿搭、比例与生动排版",
+      "messages_sha256": "079b43fbf399e013299c0dbe919fcf9271517f7892808fd3be55808b4a4a9536"
+    },
+    "zcode:sess_420629a9-fbd5-4e99-85d2-a21150c30493": {
+      "text": "复制 Follow Builders 为独立 Skill，减少对他人版本的依赖",
+      "messages_sha256": "ec8b251f050e1717db039d0476d1f4628b5109cb96703d1d00dc2f36dbb9c1b3"
+    },
+    "01a120fb-cb51-7333-aeaf-b4c2f1a502a1": {
+      "text": "打开个人网站并处理页面反馈",
+      "messages_sha256": "65923015147331e58f929ce9f556a663f2354af1f144c506962e50c40b762345"
+    },
+    "01a12109-245a-7092-9500-3d3332ed69c5": {
+      "text": "提炼个人特质与适合放在网站上的座右铭",
+      "messages_sha256": "b52b7c88f1f1bbfe347be5fe3ce167d98faebecf5aa5e5056e2581ee7f3017b0"
+    },
+    "zcode:sess_f66ef528-36c7-4be7-92f9-eaffa3cd7fd1": {
+      "text": "为个人网站提炼表达生命价值与色彩的英文座右铭",
+      "messages_sha256": "0328d2f2e70c28de403dd82c4c845625d7b1473763d73263d0f45a2232af37cb"
+    },
+    "zcode:sess_b7f156ee-44f6-4848-baef-891bde0e5078": {
+      "text": "将徐霞客游历路线制作成含地图缩放、场景图片与人物行进的分享动画",
+      "messages_sha256": "48ad4a5afd16b8b0559e42a3e6082cad1226590c196e7b0bef9a8cc36c6426d6"
+    },
+    "zcode:sess_d7e1214a-0f31-45fd-987b-003981075bf1": {
+      "text": "将个人网站 Hero 文案改为 Make everything colorful",
+      "messages_sha256": "4f43af7827c794ade73ada5aa6ea476c538ca7bfa50cf8a13d33dd8a92a7e2be"
+    },
+    "01a1240d-d7bc-74b2-9e4a-5998fe21381e": {
+      "text": "重做个人网站 Hero 的构图与人物动效，并精简顶栏和滚动提示",
+      "messages_sha256": "5107adbaefc529244ea23a1aa973963c2e554d92cf7789a97c6f2e6219ba6afe"
+    },
+    "01a1240e-8174-7522-9a4c-f40dbe386d10": {
+      "text": "调研十种适合手作 App 的视觉风格，并制作强调真实组件的对比 Demo",
+      "messages_sha256": "5d1e960c9d591ebf10dfd6970f821d16bf2cbd8d83696d331c2e2210a197b1f7"
+    },
+    "01a1241c-ef12-7360-a8e0-402bb983934d": {
+      "text": "调研品牌设计师设计包袋的流程并用流程图呈现",
+      "messages_sha256": "4300a71f9a282dd6a8136c1b839b84ef49d2e65bd6659b76f5b2cfeca4718aa4"
+    },
+    "01a12461-d03e-76d2-8850-79ba02e92340": {
+      "text": "为参考包型应用不同布料，调整牛仔柔软质感与绒面配色",
+      "messages_sha256": "6e7cd5d1d7d3848e54411e53499b25f6af5f83025d17e3a757be48ba3385cd71"
+    },
+    "01a12603-c914-7da1-9634-9d4ac4e00b5b": {
+      "text": "优化手作 App 的材质与图案分类，区分素色叠加和现成组合",
+      "messages_sha256": "8d8d6e08bd2cdb06da93dcc6ab9f91fbcb301bf014dc24f93fad8d64e6f9a1b6"
+    },
+    "01a12607-746e-7a03-a058-6fa08c6353f4": {
+      "text": "为指定包型应用黑色牛皮材质",
+      "messages_sha256": "26e34fda2924eb23a1e7660a9f0d712bfe04ffe53c7e47fafebffd1ac7908e03"
+    },
+    "01a1260a-6a46-7ff0-a273-e4ae3eff042d": {
+      "text": "将 Codex 全部需求整理为 HTML 任务档案，并配置每日中午刷新",
+      "messages_sha256": "9ed35ed9ebc532da58f6435b1372c038cda6f75a7dc070a5efb6d86a155f5e44"
+    },
+    "01a1261b-5755-7b61-88f0-d2fbfbc6e658": {
+      "text": "为包型试配皮革与织物材质，并设计提升质感的文字 Logo",
+      "messages_sha256": "a7b95c65d75de68664db4c4cc2706ad21bbf76acb043298dc74e83fa5e66dbe7"
+    },
+    "chatgpt:water-sound-research-20261012": {
+      "text": "评估 Apple 与小米水流声识别的场景边界及用户价值成立条件",
+      "messages_sha256": "b35ca3b08ee83659cee7b56e41a44db800fb20abe1f39450d6edbe3e7582e23f"
+    },
+    "chatgpt:hearing-process-20261012": {
+      "text": "梳理人耳声音解析流程、听力损伤节点与障碍分类",
+      "messages_sha256": "8330b8842162c9996729aca0cfc45ca400dfcb24f0581d095f826301c74a143b"
+    },
+    "01a13016-85a3-7a01-9df2-ede8d7c88744": {
+      "text": "设计适合手作的斜挎手机包，优化比例并扩展贵州风格图案系列",
+      "messages_sha256": "72f321cdd3888a06c84e08a5585ace59abced4e6bb237cc3cdcc29e59d778680"
+    },
+    "01a1302a-87df-7500-86bc-0deeb00a9f47": {
+      "text": "根据参考尺寸绘制可全程手缝的包袋材料与制作图纸",
+      "messages_sha256": "657d825bf3b1655eb5a81c8eb3a865bf80c8605e3b586cbe4d5d92bfd07c19c6"
+    },
+    "01a13030-930d-7140-9810-bd877d42299b": {
+      "text": "调整包型斜视角与侧面比例，并绘制浅灰轮廓图",
+      "messages_sha256": "cb39c35f8ee86d64d12c841b297f88012f826496bbe25b3eb76559d27198eb0c"
+    },
+    "01a13050-319d-7f72-a85c-08435340f207": {
+      "text": "将布料颜色与图案整理成真实质感的独立正方形选材卡片",
+      "messages_sha256": "f198ca835213a1b18f87b6caac0edcae4475576495889463a6b8877d6628bb9e"
+    },
+    "01a1306b-b067-7c20-9039-d779de52a02e": {
+      "text": "绘制包带连接与包口开合方式示意，并统一为简洁灰色图标",
+      "messages_sha256": "bf71f8fd8d5e7b54d2620cb58b93d717a6a5d588f05fae6551e332d4fc680a45"
+    },
+    "01a1307e-bf87-72b1-845e-bcb8b0059c90": {
+      "text": "为包袋设计“下班了”等刺绣和年轻化情绪文字图案",
+      "messages_sha256": "62d3e8cdc23a897e08bc9fb61917833dec48db664b41b3f89b8b958711822996"
+    },
+    "01a1308a-7929-76b2-b974-b03268b39b8e": {
+      "text": "开发托特包手作 App 闭环，锁定包型几何并优化分部件材质渲染与操作流程",
+      "messages_sha256": "2dcbd18197eeb5751daa7e465b873a61b9b0e25ba1d44ff6a0a12aebde52f582"
+    },
+    "01a1308f-ae7e-71c3-96cc-0629ff7cf22d": {
+      "text": "设计易于手工制作的蔬菜、动物与个性化挂件系列",
+      "messages_sha256": "e74cb74a3a3667f87d88584fac9516597c90f7fd63c1e84ecda1355e908041ba"
+    },
+    "01a130a2-2a52-78b1-a4d8-cf69776f9c8a": {
+      "text": "制作包含材料、裁片尺寸与缝制步骤的手绘风包袋教程",
+      "messages_sha256": "a00bad9124f149d87edc79f316686c8f3a846d08d39455b7c5410e533cadfb34"
+    },
+    "chatgpt:figma-custom-sound-20261013": {
+      "text": "读取 Figma 自定义家电声与门铃声设计文件",
+      "messages_sha256": "bc099f06e74b707fd23c381805f058daf8f0b7abbb473198f27f590f4d8da560"
+    },
+    "chatgpt:remotion-research-20261013": {
+      "text": "了解 Remotion 与 AI Skills，并寻找适合产品宣传视频的制作工具链",
+      "messages_sha256": "90a63dc0f7b37063e610145dbefd0311b3437f089311dd957555a9a44b1453f6"
+    },
+    "chatgpt:vivo-custom-sound-video-20261013": {
+      "text": "制作带旁白、字幕和关键 UI 演示的竖屏自定义声音 2D 宣传片",
+      "messages_sha256": "d5f9e221024d03941d5ae5d4548677245cfc53dfa9f18b7bacbfd3e71f69d61d"
+    },
+    "chatgpt:vivo-custom-sound-analytics-20261013": {
+      "text": "设计自定义声音的增长、采集、通知与留存看板，明确人数和次数口径",
+      "messages_sha256": "10a5b0d0c68478870b8f98a8060d3c789b0991139ca8ffd8fd9740e89abea943"
+    },
+    "01a138cf-690a-73e3-9395-c4def1ef52af": {
+      "text": "根据棕色棉麻或帆布包的尺寸编写新手逐步制作说明",
+      "messages_sha256": "6664a29580acfb230145f76b4ad26bac142403d46c19fcc513b48af3be32b311"
+    },
+    "01a138d3-18ec-79c3-8154-a9698337be26": {
+      "text": "比较预置效果图与即时合成方案，并评估材质预览的质量保障方式",
+      "messages_sha256": "8f16634617b3332b4c41a55e36564fd3f9fb5be7271ebe11f59f0bd29f25cddb"
+    },
+    "01a13906-8277-7283-8664-cc65bb643f73": {
+      "text": "调整手作 App 三级交互结构的页面排版",
+      "messages_sha256": "9c0b3fa2e0cce1141b2596bc6657e00c2ad2727b299b4d95a1c13f5a5e81cdbf"
+    },
+    "01a13907-4135-7f51-9ced-1385644e2f2e": {
+      "text": "修复包带连接方式切换展示，并统一为简洁实体示意风格",
+      "messages_sha256": "f2e4b1d2c1a96da7f37c66db867713ca562a1873198b2a93d58a5605395bf948"
+    },
+    "chatgpt:stepfun-event-20261014": {
+      "text": "整理 10 月 13 日阶跃星辰发布会内容并形成完整报告",
+      "messages_sha256": "8634afae50cfb7edaa1d62a0a7151322b5bc6058636061b2f38b48e056532695"
+    },
+    "chatgpt:vivo-accessibility-merge-20261014": {
+      "text": "拆解 vivo 四款语音产品的共性与差异，形成系统融合评估表",
+      "messages_sha256": "5023f7ac9e1e46b07e7c6e3ba011cb36e58a3d2ee239e6b63594635859054315"
+    },
+    "chatgpt:chatnote-positioning-promo-20261014": {
+      "text": "梳理 ChatNote 的定位、差异化与推广大纲，并设计全 2D 宣传视频方案",
+      "messages_sha256": "154b63438d0b4c76343a7f4448da12308405f3584b05b92e3d52f9b451a5b989"
+    },
+    "01a13a47-0c0e-76a0-b8e2-ef9ff3164ea5": {
+      "text": "筛选并统一五种内衬布料图片、名称与质感后加入 App",
+      "messages_sha256": "a1b7de77c28235978f0b04118822bd6940ceff9077139c3c1c7b201ff52356d4"
+    },
+    "01a13a47-cbc7-7601-a895-26df006ce3ef": {
+      "text": "筛选易于手工制作的包型，调整选项并统一正视轮廓与真实缝线",
+      "messages_sha256": "cf423ad47d47a02efc29766057aaa20ee5c554f73e50273e28a0f570447a4dbf"
+    },
+    "01a13a49-97a9-7360-bc22-0d6061ddd569": {
+      "text": "保留顶部步骤导航并删除底部重复的下一步按钮",
+      "messages_sha256": "3920d02d4726f47f1f6e71da7c736976fdcb99c182807bea4ed22f850e657c06"
+    },
+    "01a13a60-2ac2-71b2-b2c7-a0899d8ec331": {
+      "text": "制定简洁手绘的包袋制作教程规范，统一裁片、步骤与灰色页面风格",
+      "messages_sha256": "2a5ed7ea289ad734d2262069b0a5349bcc0d47fad7593e226d2cea5d876032a0"
+    },
+    "01a13a66-4fd6-7621-9b02-ca0dc1da086a": {
+      "text": "调整托特包型，使其清晰体现前后、左右与顶部结构",
+      "messages_sha256": "6617e1fef44f4c76fa101e3cc874cb5670a5300ff16fffd0033a36b87b216207"
+    },
+    "01a13a8f-6cb5-7fc3-93d0-e801e36ecf4d": {
+      "text": "修复材质默认应用规则及包带、包底和包身的预览一致性",
+      "messages_sha256": "7dbd1903a69d703ad0b67bef654f74341f462633776eb6c0713df6819bfec107"
+    },
+    "zcode:sess_a3883551-7a6a-4e94-b297-57cf652edc8f": {
+      "text": "撰写概括 vivo 工作背景的简历开场介绍",
+      "messages_sha256": "97d54980f646720d468f87f361b9ec25696e42112eba78836bef6b34101fa27c"
+    },
+    "chatgpt:chatnote-fixes-20261015": {
+      "text": "完善 ChatNote 的编辑、默认保存、整块摘录与会话笔记标记，并交付更新安装包",
+      "messages_sha256": "2a0e209f83b9db5c078dad8eb0b4c9b0bc776c3566b9b2ca23691bbce94dc6a8"
+    },
+    "chatgpt:github-skills-20261015": {
+      "text": "创建并推送 GitHub 与用户行为埋点 Skill，完善代码检查、命名及版本记录",
+      "messages_sha256": "59a8e252a3042829baf8fefd40f316e7093ded73c72b19e69a2e635f1cfd4668"
+    },
+    "01a13df7-6102-74b1-b395-8ca0c92042c3": {
+      "text": "全局梳理手作产品与技术架构，并区分已完成和待完成事项",
+      "messages_sha256": "cbaf1ccb4b95d98be74b0399e28470bb920afd61ac571fbbd74d62d47952dc29"
+    },
+    "01a13e00-0e8f-7693-8b0d-33b585105f42": {
+      "text": "将材质选择改为按部件纵向展开与折叠，并精简重复层级",
+      "messages_sha256": "ae66f7fd2ce4bbb101c7ac442ea816b904923bcffdbb9cc7e2269c47482e45b5"
+    },
+    "01a13e00-a549-7d50-ba2c-94c28ce7e47a": {
+      "text": "设计至少四种易获取材质及每种六款图案，并更新 App 材质列表",
+      "messages_sha256": "237136b6e60ffa5093efd71490184e28f40c44e0a1cead53b9a750e03edefa05"
+    },
+    "chatgpt:history-retrieval-20261015": {
+      "text": "找回实时收听与 Recap 对比聊天及 John Ternus 发布会后访谈视频",
+      "messages_sha256": "3fd0440166378838474f988f2cdeff125fbc6090787530a54af7459d07a0d816"
+    },
+    "01a13fbf-c126-77c0-bce8-880c9a350a27": {
+      "text": "建立跨平台统一任务档案，合并 Codex 与 ZCode 数据并同步 GitHub 和定时刷新",
+      "messages_sha256": "581c1a86313d9a08b400cdf037f5450e5ff37a2c932b32c6dc55b31a258dd47e"
+    },
+    "zcode:sess_2a944ba3-66b1-48eb-8af9-d2ca85edb76c": {
+      "text": "查找李佳琦直播间单场营业额的公开统计",
+      "messages_sha256": "1b50909c662ac1c8a2d48337c3010a50a53aa21ecc5e4009caec1a4d8b2e744b"
+    },
+    "01a13fd8-17dd-7830-8510-36e70794cfa1": {
+      "text": "了解小炳胜及相关餐饮品牌的走红过程、定位与门店",
+      "messages_sha256": "2bbd58db54d4772e432b87cfc4692ecb73cd86dc4643190ba67280fad30705f6"
+    },
+    "01a13fd8-4a7d-7a93-89b0-7112b47daeb2": {
+      "text": "了解 YouTube 连接与站内搜索能力",
+      "messages_sha256": "1b0f7d7cb3614771380a212486624831d2bda4e333fcf02d573a9f5ec5666466"
+    },
+    "zcode:sess_6b71c1e8-f5ab-4052-a0c5-f18ba0c09dd0": {
+      "text": "介绍小炳胜并扩展了解其他知名粤菜餐厅",
+      "messages_sha256": "82849cafb4b9e1f4da142219846da6441b9c536c2f5b2548230c9ff3046f5900"
+    },
+    "01a14080-1cf8-7d40-83b7-e7ad4ec7a334": {
+      "text": "为个人网站人物制作慢跑或攀岩 GIF 动画",
+      "messages_sha256": "9ae719930805d6cba05dda640cbe295d410019ae83a35ce604b2a0c26ee9e8ce"
+    },
+    "chatgpt:task-archive-sync-20261016": {
+      "text": "将 ChatGPT 任务按分类和主题归档，并配置每日刷新与 GitHub 同步",
+      "messages_sha256": "2660a2bf6ce654629cba370b968052fe25e172339bcfd1e10bbaad05f9ee8a2d"
+    }
   }
 }

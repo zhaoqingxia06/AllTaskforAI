@@ -85,6 +85,40 @@ def normalize(entry, source, ids):
                 children=max(0, len(messages) - 1), metadata_only=not bool(messages))
 
 
+def messages_digest(task):
+    return hashlib.sha256(json.dumps([m['text'] for m in task['messages']], ensure_ascii=False).encode()).hexdigest()
+
+
+def summarize_task(task, summaries):
+    """Use a reviewed whole-conversation summary, invalidating it on message changes."""
+    original_title = task['title']
+    entry = summaries.get(task['id'], {})
+    if entry.get('messages_sha256') == messages_digest(task) and entry.get('text', '').strip():
+        task['title'] = safe_text(entry['text'].strip())
+        task['summary_needs_review'] = False
+    else:
+        # New conversations remain usable while the next editorial pass reviews them.
+        # Extract broad intents from ALL messages rather than echoing the first request.
+        text = '\n'.join(m['text'] for m in task['messages'])
+        rules = [
+            (r'开发|实现|搭建|MVP', '功能开发'),
+            (r'调研|研究|分析|对比|评估', '调研分析'),
+            (r'交互|布局|排版|视觉|风格', '交互与视觉优化'),
+            (r'修复|bug|Bug|无法|打不开|失败', '问题排查与修复'),
+            (r'文案|脚本|宣传|推广|视频|插画', '内容制作'),
+            (r'部署|推送|GitHub|上线|安装包', '部署与交付'),
+            (r'定时|每天|每周|自动刷新', '定期更新'),
+        ]
+        intents = [label for pattern, label in rules if re.search(pattern, text)]
+        topic = task['group'] if task['group'] != '其他' else '该任务'
+        task['title'] = ('围绕' + topic + '推进' + '、'.join(intents[:4])) if intents else ('梳理' + topic + '的需求与后续补充')
+        if not task['messages']:
+            task['title'] = original_title
+        task['summary_needs_review'] = True
+    task['source_title'] = original_title
+    return task
+
+
 def collect():
     codex = read(ROOT / 'data/codex.json')
     ids, tasks = set(), []
@@ -97,6 +131,8 @@ def collect():
             raise ValueError(f'{path.name} 的source不合法或使用了保留名称codex')
         for entry in document['tasks']:
             tasks.append(normalize(entry, source, ids))
+    summaries = read(ROOT / 'data/curation.json').get('task_summaries', {})
+    tasks = [summarize_task(t, summaries) for t in tasks]
     tasks.sort(key=lambda t: (t['created_at'], t['id']))
     coverage = codex['coverage'].copy()
     coverage['classification_pending'] = sum(t['group'] == '其他' for t in tasks)

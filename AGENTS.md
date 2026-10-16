@@ -12,3 +12,5 @@ This is the public task archive. Preserve every existing task and original user 
 - Run `python3 scripts/build.py` before pushing or opening a PR. It merges ALL platforms into the single generated root `index.html`. Include that file when committing. The archive workflow rebuilds this same file after source changes; existing hosting configuration is preserved. Never replace it with a platform-only page.
 - Do not manually edit generated `index.html` or `dist/` files. Do not add credentials, authentication exports, or local databases.
 - Never overwrite another platform's contribution file or rewrite repository history.
+
+- Task titles summarize ALL user messages in one sentence. Refresh `data/curation.json` task_summaries when messages change; follow CONTRIBUTING.md. Never use only the first message as the display title.
