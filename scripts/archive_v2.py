@@ -208,10 +208,9 @@ def render(data):
     labels = {'chatgpt': 'ChatGPT', 'codex': 'Codex', 'zcode': 'ZCode'}
     source_counts = collections.Counter(m['source'] for m in messages.values())
     sources = '<button type="button" data-source="all" aria-pressed="true">全部</button>' + ''.join(
-        f'<button type="button" data-source="{esc(src)}" aria-pressed="false">{esc(labels.get(src, src))}</button>' for src in sorted(source_counts))
-    source_stats = '<span class="source-stats">来源消息：' + ' · '.join(f'{esc(labels.get(src, src))} <strong>{count}</strong> 条' for src, count in sorted(source_counts.items())) + '</span>'
+        f'<button type="button" data-source="{esc(src)}" aria-pressed="false">{esc(labels.get(src, src))} <span class="source-count">{source_counts[src]}</span></button>' for src in sorted(source_counts))
     coverage = '；'.join(c['source']+'：'+str(c.get('scope', '覆盖范围未说明')) for c in data['coverage']) or '尚未接入消息来源'
-    values = {'TITLE': esc(data['title']), 'STATS': f'{stats["projects"]} 个项目 · {stats["requirements"]} 条需求 · {stats["messages"]} 条关联消息' + source_stats,
+    values = {'TITLE': esc(data['title']), 'STATS': f'{stats["projects"]} 个项目 · {stats["requirements"]} 条需求 · {stats["messages"]} 条关联消息',
               'UPDATED': esc(time_label(data['generated_at'], tz)), 'TABS': tabs, 'SECTIONS': ''.join(sections), 'SOURCES': sources,
               'COVERAGE': esc(coverage+f' · 待整理 {stats["pending"]} 条'),
               'DATA': json.dumps(data, ensure_ascii=False).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')}
