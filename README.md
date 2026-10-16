@@ -32,6 +32,8 @@
 
 [查看作者的任务档案网站](https://zhaoqingxia06.github.io/AllTaskforAI/)
 
+该网址仅供查看排版示例，不包含在可分享的 Skill 内。Skill 使用自带 HTML 模板固定标题、分类、项目、摘要和原文的排版；运行时无需访问作者网站。
+
 该网站及本仓库根目录现有 data、web、scripts 和 index.html 是作者个人示例，保留用于展示。它不是新用户的默认写入目标，也不随 Skill 初始化复制。网站目前的托管方式不限制 Skill 使用其他网站服务。
 
 ## Skill 文件
