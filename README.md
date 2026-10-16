@@ -1,7 +1,7 @@
-# 任务档案
+# TaskArchive · 任务档案
 
-集中整理多个 AI 平台上的任务与后续需求，按分类和主题展示在同一个网页。
+自动汇总你与 AI 的任务，分类整理，随时回溯。
 
-- **数据来源**：Codex、ZCode 中已接入的任务及用户对话原文。
+- **数据来源**：Codex、ZCode、ChatGPT 中已接入的任务及用户对话原文。
 - **更新时间**：Codex 每天北京时间 12:00；其他平台推送数据后自动合并更新。
-- **网页地址**：[查看任务档案](https://zhaoqingxia06.github.io/AllTaskforAI/)
+- **网页地址**：[查看任务档案](https://zhaoqingxia06.github.io/TaskArchive/)

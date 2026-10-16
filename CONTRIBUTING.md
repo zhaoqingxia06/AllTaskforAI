@@ -45,7 +45,7 @@
 
 ## 数据接口
 
-固定入口：[index.html](https://github.com/zhaoqingxia06/AllTaskforAI/blob/main/index.html)。它内嵌所有平台数据，可独立打开并下载全部任务 JSON。构建的 dist/tasks.json 和 dist/feed.json 可供本地工具核对数量与内容摘要。
+固定入口：[index.html](https://github.com/zhaoqingxia06/TaskArchive/blob/main/index.html)。它内嵌所有平台数据，可独立打开并下载全部任务 JSON。构建的 dist/tasks.json 和 dist/feed.json 可供本地工具核对数量与内容摘要。
 
 ## 任务标题总结
 
