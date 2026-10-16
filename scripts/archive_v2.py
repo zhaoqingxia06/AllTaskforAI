@@ -205,9 +205,13 @@ def render(data):
             groups.append(f'<section class="group"><header class="group-heading"><h3>{esc(p["name"])}<span class="group-count">{len(reqs)} 条需求</span></h3><p>{esc(p["description"])}</p><div class="project-times">{esc(times)}</div></header>{"".join(rows)}</section>')
         sections.append(f'<section class="category" data-category="{esc(cat["id"])}"><header class="category-heading"><h2>{esc(cat["name"])}</h2><span>{count} 条需求</span></header><div class="category-content">{"".join(groups)}</div></section>')
     stats = data['stats']
-    sources = '<option value="all">全部</option>'+''.join(f'<option value="{esc(s)}">{esc(s)}</option>' for s in sorted({m['source'] for m in messages.values()}))
+    labels = {'chatgpt': 'ChatGPT', 'codex': 'Codex', 'zcode': 'ZCode'}
+    source_counts = collections.Counter(m['source'] for m in messages.values())
+    sources = '<button type="button" data-source="all" aria-pressed="true">全部</button>' + ''.join(
+        f'<button type="button" data-source="{esc(src)}" aria-pressed="false">{esc(labels.get(src, src))}</button>' for src in sorted(source_counts))
+    source_stats = '<span class="source-stats">来源消息：' + ' · '.join(f'{esc(labels.get(src, src))} <strong>{count}</strong> 条' for src, count in sorted(source_counts.items())) + '</span>'
     coverage = '；'.join(c['source']+'：'+str(c.get('scope', '覆盖范围未说明')) for c in data['coverage']) or '尚未接入消息来源'
-    values = {'TITLE': esc(data['title']), 'STATS': f'{stats["projects"]} 个项目 · {stats["requirements"]} 条需求 · {stats["messages"]} 条关联消息',
+    values = {'TITLE': esc(data['title']), 'STATS': f'{stats["projects"]} 个项目 · {stats["requirements"]} 条需求 · {stats["messages"]} 条关联消息' + source_stats,
               'UPDATED': esc(time_label(data['generated_at'], tz)), 'TABS': tabs, 'SECTIONS': ''.join(sections), 'SOURCES': sources,
               'COVERAGE': esc(coverage+f' · 待整理 {stats["pending"]} 条'),
               'DATA': json.dumps(data, ensure_ascii=False).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')}
