@@ -15,13 +15,34 @@ STATUS={'completed':('done','完成'),'failed':('error','出错'),'inProgress':(
 def esc(value):
     return html.escape(str(value), quote=True)
 
-def message_button(t, m, i):
+def message_summary(text):
+    """Extract a compact, readable sentence; the full source remains untouched."""
+    text = re.sub(r'!\[[^\]]*\]\([^)]*\)', '', text)
+    text = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', text)
+    text = re.sub(r'https?://\S+', '相关链接', text)
+    text = re.sub(r'[`#>*_]+', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r'^(?:嗯[，, ]*|就是[，, ]*|然后呢[，, ]*|请你[，, ]*|帮我[，, ]*)+', '', text)
+    sentence = re.split(r'[。！？!?；;\n]', text, maxsplit=1)[0].strip()
+    if len(sentence) > 64:
+        clauses = re.split(r'[，,]', sentence)
+        compact = clauses[0]
+        for clause in clauses[1:]:
+            if len(compact) + len(clause) + 1 > 64:
+                break
+            compact += '，' + clause
+        sentence = compact if len(compact) >= 12 and len(compact) <= 64 else sentence[:63] + '…'
+    return sentence or '查看这条需求的原文'
+
+
+def message_button(t, m, i, summaries=None):
     label = '任务原文' if i == 0 else f'子任务 {i}'
     repeated = f' · 连续重复 {m["repeat"]} 次已合并' if m['repeat'] > 1 else ''
     when = m['time'][:16].replace('T', ' ')
+    summary = (summaries or {}).get(t['id'], {}).get(m['id']) or message_summary(m['text'])
     return f'''<button class="message" data-task="{esc(t['id'])}" data-index="{i}" aria-label="查看{label}全文">
       <span class="message-meta">{label}<time datetime="{esc(m['time'])}">{when}</time>{repeated}</span>
-      <span class="message-text">{esc(m['text'])}</span><span class="read-more">查看全文</span></button>'''
+      <span class="message-text">{esc(summary)}</span><span class="read-more">查看原文 ↗</span></button>'''
 
 def render(tasks, coverage, previous, curation):
     now = dt.datetime.now(TZ).isoformat(timespec='seconds')
@@ -50,7 +71,7 @@ def render(tasks, coverage, previous, curation):
                 marks += ('<span class="badge scheduled">定时</span>' if t['scheduled'] else '') + ('<span class="badge">已归档</span>' if t['archived'] else '')
                 marks += f'<span class="dot {cls}" role="img" aria-label="会话{status_label}" title="会话执行状态：{status_label}"></span>'
                 marks += f'<span class="sub-count" title="{t["children"]} 条子任务">{t["children"]}</span><span class="chevron" aria-hidden="true">⌄</span>'
-                body = ''.join(message_button(t, m, i) for i, m in enumerate(t['messages']))
+                body = ''.join(message_button(t, m, i, curation.get('message_summaries', {})) for i, m in enumerate(t['messages']))
                 if not body:
                     body = '<p class="unavailable">仅有任务索引；未找到可读取的用户消息，标题暂用索引标题。</p>'
                 created = t['created_at'][:16].replace('T', ' ')
