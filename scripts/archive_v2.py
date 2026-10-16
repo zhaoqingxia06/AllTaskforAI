@@ -192,10 +192,10 @@ def render(data):
                     group_key = (m['text'], json.dumps(m['attachments'], ensure_ascii=False, sort_keys=True))
                     originals.setdefault(group_key, []).append(m)
                 bodies = []
-                for records in originals.values():
+                for original_number, records in enumerate(originals.values(), 1):
                     meta = ('历史整理稿 · 非逐字原文 · 时间未经核验 · ' if records[0].get('record_kind') == 'legacy_summary' else '') + ' · '.join(time_label(m['sent_at'], tz) + ' / ' + m['source'] + ' (' + ', '.join(m['clients']) + ')' for m in records)
                     attachments = ''.join('<p class="original-meta">附件引用：'+esc(json.dumps(m['attachments'], ensure_ascii=False))+'</p>' for m in records if m['attachments'])
-                    bodies.append(f'<article class="original"><div class="original-meta">{esc(meta)}</div><pre>{esc(records[0]["text"])}</pre>{attachments}</article>')
+                    bodies.append(f'<details class="original"><summary class="original-row"><span class="original-label">原文 {original_number}</span><span class="original-meta">{esc(meta)}</span><span class="original-chevron" aria-hidden="true">⌄</span></summary><pre>{esc(records[0]["text"])}</pre>{attachments}</details>')
                 srcs = sorted({messages[ref]['source'] for ref in refs})
                 search = '\n'.join([cat['name'], p['name'], p['description'], *p.get('aliases', []), r['summary'], *(messages[ref]['text'] for ref in refs)]).lower()
                 mark = '<span class="badge scheduled">定时</span>' if r.get('scheduled') else ''
