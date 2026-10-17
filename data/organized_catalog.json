@@ -393,6 +393,13 @@
       "category_id": "life",
       "description": "面向中国申请人的欧洲签证办理流程网站：左侧分步流程、右侧决策辅助信息。",
       "aliases": []
+    },
+    {
+      "id": "p-fitness-plan",
+      "name": "健身减肥计划",
+      "category_id": "life",
+      "description": "制定能坚持下去的减肥健身计划：膝盖友好的月度健身日历与免费 AI 健身工具调研。",
+      "aliases": []
     }
   ],
   "requirements": [
@@ -6729,9 +6736,68 @@
       "project_id": "p-9b6182eb6228",
       "summary": "反馈从 TaskArchive 仓库打不开个人网站的问题",
       "message_refs": [
-        "[\"zcode\",\"sess_8b7ad033-f8b7-4106-bd23-1caddbe76812\",\"msg_mvassile_3a79e2ba-8547-46e4-a079-91a869cd78e2\"]"
+        "[\"zcode\",\"sess_8b7ad033-f8b7-4106-bd23-1caddbe76812\",\"msg_mvassile_3a79e2ba-8547-46e4-a079-91a869cd78e2\"]",
+        "[\"zcode\",\"sess_8b7ad033-f8b7-4106-bd23-1caddbe76812\",\"msg_mvat27mt_064e6455-f8f9-4775-9e5a-42e428d7d63d\"]"
       ],
-      "evidence_sha256": "51e8ec10f0d80b5f94ab925553a3011194600838e8001111b82ed4c1506d7d75"
+      "evidence_sha256": "b3e3dd60739536c8710c7903cf42d7dde32201ea38d9b85b22f7975bf513581f"
+    },
+    {
+      "id": "knee-friendly-fat-loss-plan",
+      "project_id": "p-fitness-plan",
+      "summary": "制定膝盖友好的减肥健身计划并做成可视化健身日历：体重约 120 斤、身高 1 米 61、每天可练 1 小时以上，在公司瑜伽室（有跑步机、登山机、力量器械与瑜伽垫）练习，动作与跟练视频一并找好，先做 7 天再逐月优化，兼顾能坚持下去",
+      "message_refs": [
+        "[\"zcode\",\"sess_368242b9-c68f-4d76-bff1-6b5fc13008dc\",\"msg_mvaudee8_339cd5ec-3c53-4db6-b17c-a8bb9f102947\"]"
+      ],
+      "evidence_sha256": "d3fef8592b1a1db6f0063365c9e7e1afb158147fac97bbf609dc41d60591303a"
+    },
+    {
+      "id": "free-ai-fitness-tool-scan",
+      "project_id": "p-fitness-plan",
+      "summary": "寻找免费不收费、能根据个人健身需求直接生成健身计划的 AI 工具",
+      "message_refs": [
+        "[\"zcode\",\"sess_4ee37bf2-4ee9-4e63-833b-8f3984a09aed\",\"msg_mvauiq04_75c06e4f-ad60-496c-a5b0-6a9781127fc1\"]"
+      ],
+      "evidence_sha256": "665ab6aad3a19840d2b2d63901835dade502bec3503be77fda2b3f59ad3de15a"
+    },
+    {
+      "id": "sign-app-stats-analysis",
+      "project_id": "p-sign-translator-v2",
+      "summary": "在 vivo 开发者平台查看手语翻译官 App 下载量与运营数据的变化，并结合 9-28 上线的手语翻译官 2.0 分析哪些增长与该版本更新相关",
+      "message_refs": [
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatcfhk_4f266ab9-badb-4750-b6cf-43fd4dc1ada3\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatfqex_87da67d4-bdd5-4989-b298-cd3e4b50a705\"]"
+      ],
+      "evidence_sha256": "f7724052d9488807b7c89be610f3cbcdbf707636bdef752afa7fd4fa42660a3c",
+      "note": "开发者平台账号密码已在公开原文中脱敏。"
+    },
+    {
+      "id": "taskarchive-skill-sharing-clarification",
+      "project_id": "p-9b6182eb6228",
+      "summary": "运行 TaskArchive skill 把内容同步到档案网站；期间澄清该 skill 定位是分享给他人使用、不应把个人数据写进 skill 本身，最终确认继续同步数据到网站、但不改仓库",
+      "message_refs": [
+        "[\"zcode\",\"sess_460034f0-60c6-41b7-a2d0-f8c2ab8dc160\",\"msg_mvat5pv5_4d918527-bb7d-4f56-ae39-ba99394cc8f5\"]",
+        "[\"zcode\",\"sess_460034f0-60c6-41b7-a2d0-f8c2ab8dc160\",\"msg_mvatjypa_ba42bd4e-8e81-496a-97c7-83aced9b75a3\"]",
+        "[\"zcode\",\"sess_460034f0-60c6-41b7-a2d0-f8c2ab8dc160\",\"msg_mvatl92t_1298a4c1-b7ba-46db-8a7d-4df804641404\"]"
+      ],
+      "evidence_sha256": "79c463fce3e0bf45288f7ddd8d403b23061838c858374e3775d462ec8c626baf"
+    },
+    {
+      "id": "taskarchive-expand-originals-ux",
+      "project_id": "p-9b6182eb6228",
+      "summary": "修正档案网站展开交互：点击需求摘要后原文列表应全部直接显示，删除“原文 1/原文 2”二次折叠与编号标签",
+      "message_refs": [
+        "[\"zcode\",\"sess_f2e1b071-ba42-4990-8700-fb128e6e170f\",\"msg_mvauhnuz_3e7f9364-d459-4225-ab3d-acb947899e06\"]"
+      ],
+      "evidence_sha256": "ff06e0f00cac5565d180326eb195dcc9e2a84043b71d5db7fe3bf196b4b54281"
+    },
+    {
+      "id": "tesla-launch-executive-reactions",
+      "project_id": "p-5c228083be5e",
+      "summary": "关注 Tesla 新车发布，调研国内新能源汽车高管们如何评价此事",
+      "message_refs": [
+        "[\"zcode\",\"sess_badf9352-073a-412f-b0e2-a99f6305e837\",\"msg_mvav4shi_735695ae-169f-430d-afb7-65fbebd1cae0\"]"
+      ],
+      "evidence_sha256": "23690623921c57f400abd38f940e4499b4444d841bee648721b7f04d7209404b"
     }
   ],
   "excluded_task_ids": [
